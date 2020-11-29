@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb5ea541616b1f4abff794c46d5d279, type: 3}
   m_Name: NormalSprintSpeed
   m_EditorClassIdentifier: 
-  value: 6
+  value: 9
