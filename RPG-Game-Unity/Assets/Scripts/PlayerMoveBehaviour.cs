@@ -26,6 +26,8 @@ public class PlayerMoveBehaviour : MonoBehaviour
 
         movement.Set(hInput, 0, vInput);
 
+        movement = Vector3.ClampMagnitude(movement, 1f);
+
         if (Input.GetKey(KeyCode.LeftShift))
         {
             movement *= character.runSpeed.value;
