@@ -5,6 +5,7 @@ using UnityEngine.AI;
 public class PlayerMoveBehaviour : MonoBehaviour
 {
     public CharacterData character;
+    public FloatData camRotateSpeed;
     
     private NavMeshAgent agent;
     private Vector3 movement;
@@ -20,6 +21,11 @@ public class PlayerMoveBehaviour : MonoBehaviour
 
         var hInput = Input.GetAxis("Horizontal");
         var vInput = Input.GetAxis("Vertical");
+        var yInput = Input.GetAxis("Yaw");
+
+        var rotation = transform.eulerAngles;
+        rotation.y += yInput * camRotateSpeed.value * Time.deltaTime;
+        transform.eulerAngles = rotation;
 
         movement.Set(hInput, 0, vInput);
 
