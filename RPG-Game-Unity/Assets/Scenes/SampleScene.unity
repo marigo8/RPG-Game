@@ -128,6 +128,56 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3450879066719559870, guid: 8c92051ca9c478348be85c2ac76e3694, type: 3}
   m_PrefabInstance: {fileID: 3450879066941228224}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &399528457 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3450879066719559866, guid: 8c92051ca9c478348be85c2ac76e3694, type: 3}
+  m_PrefabInstance: {fileID: 3450879066941228224}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &399528458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399528457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c9710f7836465441b139ce9a7a6c044, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionEventPairs:
+  - action: {fileID: 11400000, guid: 1673d952268fe39479c52564fcbee477, type: 2}
+    actionEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: ffac261d58248224a8b3b4033a76ac1e, type: 2}
+          m_TargetAssemblyTypeName: IDContainer, Assembly-CSharp
+          m_MethodName: ChangeID
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: ce7c9d5935b536f4d8bf7fb040f00afb, type: 2}
+            m_ObjectArgumentAssemblyTypeName: ID, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - action: {fileID: 11400000, guid: 1a4970ae52d5efa4984dfef186592728, type: 2}
+    actionEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: ffac261d58248224a8b3b4033a76ac1e, type: 2}
+          m_TargetAssemblyTypeName: IDContainer, Assembly-CSharp
+          m_MethodName: ChangeID
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: ee873ec2f648e7f4eb04486baba10522, type: 2}
+            m_ObjectArgumentAssemblyTypeName: ID, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &667010989
 GameObject:
   m_ObjectHideFlags: 0
