@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
 
@@ -18,6 +19,13 @@ public class ActionEventsBehaviour : EventsBehaviour
             action.Action += OnAction;
         }
 
+        public void Remove()
+        {
+            if (action == null) return;
+
+            action.Action -= OnAction;
+        }
+
         private void OnAction()
         {
             actionEvent.Invoke();
@@ -31,6 +39,14 @@ public class ActionEventsBehaviour : EventsBehaviour
         foreach (var pair in actionEventPairs)
         {
             pair.Initialize();
+        }
+    }
+
+    private void OnDestroy()
+    {
+        foreach (var pair in actionEventPairs)
+        {
+            pair.Remove();
         }
     }
 }
