@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 1cabb00c6ad2fc94dabe61cf4d3119df, type: 2}
+--- !u!114 &343904313 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3450879066719559871, guid: 8c92051ca9c478348be85c2ac76e3694, type: 3}
+  m_PrefabInstance: {fileID: 3450879066941228224}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d13c4b7784bc6554fa98dcfdb35c3a0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &360424574 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3450879066719559870, guid: 8c92051ca9c478348be85c2ac76e3694, type: 3}
@@ -479,7 +490,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.22975291, y: -0.000000016745155, z: 0.0000000039529953, w: 0.973249}
+  m_LocalRotation: {x: 0.22975291, y: 0.000000016746096, z: -0.0000000039532173, w: 0.973249}
   m_LocalPosition: {x: 2.7133563, y: 5, z: 0.33964634}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1025,13 +1036,93 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1306979191304246314, guid: 8c92051ca9c478348be85c2ac76e3694, type: 3}
+      propertyPath: states.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306979191304246314, guid: 8c92051ca9c478348be85c2ac76e3694, type: 3}
+      propertyPath: states.Array.data[2].id
+      value: 
+      objectReference: {fileID: 11400000, guid: 0f3e20c60fc8aa14fb93b4de404cd242, type: 2}
+    - target: {fileID: 1306979191304246314, guid: 8c92051ca9c478348be85c2ac76e3694, type: 3}
+      propertyPath: states.Array.data[3].id
+      value: 
+      objectReference: {fileID: 11400000, guid: ce7c9d5935b536f4d8bf7fb040f00afb, type: 2}
+    - target: {fileID: 1306979191304246314, guid: 8c92051ca9c478348be85c2ac76e3694, type: 3}
+      propertyPath: states.Array.data[0].name
+      value: Input for Move and Rotate
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306979191304246314, guid: 8c92051ca9c478348be85c2ac76e3694, type: 3}
+      propertyPath: states.Array.data[1].name
+      value: No Input
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306979191304246314, guid: 8c92051ca9c478348be85c2ac76e3694, type: 3}
+      propertyPath: states.Array.data[2].name
+      value: Move Input Only
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306979191304246314, guid: 8c92051ca9c478348be85c2ac76e3694, type: 3}
+      propertyPath: states.Array.data[3].name
+      value: Rotate Input Only
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306979191304246314, guid: 8c92051ca9c478348be85c2ac76e3694, type: 3}
+      propertyPath: states.Array.data[2].onUpdate.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306979191304246314, guid: 8c92051ca9c478348be85c2ac76e3694, type: 3}
+      propertyPath: states.Array.data[3].onUpdate.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306979191304246314, guid: 8c92051ca9c478348be85c2ac76e3694, type: 3}
+      propertyPath: states.Array.data[2].onUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306979191304246314, guid: 8c92051ca9c478348be85c2ac76e3694, type: 3}
+      propertyPath: states.Array.data[3].onUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306979191304246314, guid: 8c92051ca9c478348be85c2ac76e3694, type: 3}
+      propertyPath: states.Array.data[2].onUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 343904313}
+    - target: {fileID: 1306979191304246314, guid: 8c92051ca9c478348be85c2ac76e3694, type: 3}
+      propertyPath: states.Array.data[3].onUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 343904313}
+    - target: {fileID: 1306979191304246314, guid: 8c92051ca9c478348be85c2ac76e3694, type: 3}
+      propertyPath: states.Array.data[2].onUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306979191304246314, guid: 8c92051ca9c478348be85c2ac76e3694, type: 3}
+      propertyPath: states.Array.data[3].onUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306979191304246314, guid: 8c92051ca9c478348be85c2ac76e3694, type: 3}
+      propertyPath: states.Array.data[2].onUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: InputMove
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306979191304246314, guid: 8c92051ca9c478348be85c2ac76e3694, type: 3}
+      propertyPath: states.Array.data[3].onUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: InputRotation
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306979191304246314, guid: 8c92051ca9c478348be85c2ac76e3694, type: 3}
+      propertyPath: states.Array.data[2].onUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerMoveBehaviour, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306979191304246314, guid: 8c92051ca9c478348be85c2ac76e3694, type: 3}
+      propertyPath: states.Array.data[3].onUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerMoveBehaviour, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306979191304246314, guid: 8c92051ca9c478348be85c2ac76e3694, type: 3}
+      propertyPath: states.Array.data[2].onUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306979191304246314, guid: 8c92051ca9c478348be85c2ac76e3694, type: 3}
+      propertyPath: states.Array.data[3].onUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3450879066719559866, guid: 8c92051ca9c478348be85c2ac76e3694, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3450879066719559866, guid: 8c92051ca9c478348be85c2ac76e3694, type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3450879066719559870, guid: 8c92051ca9c478348be85c2ac76e3694, type: 3}
       propertyPath: m_RootOrder
@@ -1077,10 +1168,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3450879066719559871, guid: 8c92051ca9c478348be85c2ac76e3694, type: 3}
-      propertyPath: camRotateSpeed
-      value: 
-      objectReference: {fileID: 11400000, guid: 51000c259c2787a429bbb3c908cc35be, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c92051ca9c478348be85c2ac76e3694, type: 3}
 --- !u!1001 &5799940481666123942
@@ -1116,11 +1203,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5799940482014640876, guid: f91915d9e0f8c18459ec8b76e54c8a9b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000016745155
+      value: 0.000000016746096
       objectReference: {fileID: 0}
     - target: {fileID: 5799940482014640876, guid: f91915d9e0f8c18459ec8b76e54c8a9b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000039529953
+      value: -0.0000000039532173
       objectReference: {fileID: 0}
     - target: {fileID: 5799940482014640876, guid: f91915d9e0f8c18459ec8b76e54c8a9b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

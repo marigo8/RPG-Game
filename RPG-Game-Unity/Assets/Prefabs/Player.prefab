@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 3450879066719559868}
   - component: {fileID: 3450879066719559867}
   - component: {fileID: 3450879066719559744}
+  - component: {fileID: 1306979191304246314}
   - component: {fileID: 3450879066719559871}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,6 +121,52 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &1306979191304246314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3450879066719559866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0923dc0471b5204b86298b0eacd97ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentId: {fileID: 11400000, guid: ee873ec2f648e7f4eb04486baba10522, type: 2}
+  states:
+  - id: {fileID: 11400000, guid: ee873ec2f648e7f4eb04486baba10522, type: 2}
+    onUpdate:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 3450879066719559871}
+          m_TargetAssemblyTypeName: PlayerMoveBehaviour, Assembly-CSharp
+          m_MethodName: InputMove
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 3450879066719559871}
+          m_TargetAssemblyTypeName: PlayerMoveBehaviour, Assembly-CSharp
+          m_MethodName: InputRotation
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - id: {fileID: 11400000, guid: 8f9c490e8576527418e855477ed6bcc0, type: 2}
+    onUpdate:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!114 &3450879066719559871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,3 +180,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: 9be883fa32d39324995b1bd1a91e38dc, type: 2}
+  camRotateSpeed: {fileID: 11400000, guid: 51000c259c2787a429bbb3c908cc35be, type: 2}

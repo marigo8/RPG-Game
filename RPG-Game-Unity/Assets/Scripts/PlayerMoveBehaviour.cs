@@ -15,23 +15,18 @@ public class PlayerMoveBehaviour : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
     }
 
-    private void Update()
+    public void InputMove()
     {
-        // switch(characterState)
-
+        // Input
         var hInput = Input.GetAxis("Horizontal");
         var vInput = Input.GetAxis("Vertical");
-        var yInput = Input.GetAxis("Yaw");
-
-        var rotation = transform.eulerAngles;
-        rotation.y += yInput * camRotateSpeed.value * Time.deltaTime;
-        transform.eulerAngles = rotation;
-
         movement.Set(hInput, 0, vInput);
-
         movement = Vector3.ClampMagnitude(movement, 1f);
+        
+        // Factor Rotation
         movement = transform.TransformDirection(movement);
 
+        // Move Speed
         if (Input.GetKey(KeyCode.LeftShift))
         {
             movement *= character.runSpeed.value;
@@ -41,6 +36,16 @@ public class PlayerMoveBehaviour : MonoBehaviour
             movement *= character.moveSpeed.value;
         }
         
+        // Apply
         agent.Move(movement * Time.deltaTime);
+    }
+
+    public void InputRotation()
+    {
+        var yInput = Input.GetAxis("Yaw");
+
+        var rotation = transform.eulerAngles;
+        rotation.y += yInput * camRotateSpeed.value * Time.deltaTime;
+        transform.eulerAngles = rotation;
     }
 }
