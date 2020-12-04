@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class StateBehaviour : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class StateBehaviour : MonoBehaviour
         public UnityEvent onUpdate;
     }
 
-    public ID currentId;
+    public IDContainer currentIdContainer;
     public List<State> states = new List<State>(1);
 
     private State currentState;
@@ -21,10 +22,12 @@ public class StateBehaviour : MonoBehaviour
     {
         foreach (var state in states)
         {
-            if (state.id != currentId) continue;
+            if (state.id != currentIdContainer.id) continue;
             currentState = state;
-            break;
+            return;
         }
+        // Default
+        currentState = states[0];
     }
 
     private void Start()
@@ -35,7 +38,7 @@ public class StateBehaviour : MonoBehaviour
 
     private void Update()
     {
-        if(currentId != currentState.id) 
+        if(currentIdContainer.id != currentState.id) 
             ChangeState();
         
         currentState.onUpdate.Invoke();
