@@ -135,8 +135,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentId: {fileID: 11400000, guid: ee873ec2f648e7f4eb04486baba10522, type: 2}
   states:
+<<<<<<< HEAD
   - name: Input for Move and Rotate
     id: {fileID: 11400000, guid: ee873ec2f648e7f4eb04486baba10522, type: 2}
+=======
+  - id: {fileID: 11400000, guid: ee873ec2f648e7f4eb04486baba10522, type: 2}
+>>>>>>> main
     onUpdate:
       m_PersistentCalls:
         m_Calls:
@@ -164,6 +168,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+<<<<<<< HEAD
   - name: No Input
     id: {fileID: 11400000, guid: 8f9c490e8576527418e855477ed6bcc0, type: 2}
     onUpdate:
@@ -203,6 +208,12 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+=======
+  - id: {fileID: 11400000, guid: 8f9c490e8576527418e855477ed6bcc0, type: 2}
+    onUpdate:
+      m_PersistentCalls:
+        m_Calls: []
+>>>>>>> main
 --- !u!114 &3450879066719559871
 MonoBehaviour:
   m_ObjectHideFlags: 0
