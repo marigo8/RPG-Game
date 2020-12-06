@@ -15,6 +15,7 @@ public class StateBehaviour : MonoBehaviour
 
     public IDContainer currentIdContainer;
     public List<State> states = new List<State>(1);
+    public State defaultState;
 
     private State currentState;
 
@@ -28,12 +29,11 @@ public class StateBehaviour : MonoBehaviour
             return;
         }
         // Default
-        currentState = states[0];
+        currentState = defaultState;
     }
 
     private void Start()
     {
-        currentState = states[0];
         ChangeState();
     }
 

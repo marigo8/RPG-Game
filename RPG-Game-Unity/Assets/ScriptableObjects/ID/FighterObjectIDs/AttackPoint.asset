@@ -9,7 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 468f483328f9a5146b0b1a2cd3a59d8e, type: 3}
-  m_Name: PlayerFighter1
+  m_Script: {fileID: 11500000, guid: 165eba0a6b08e114ab6d3bd072189ec9, type: 3}
+  m_Name: AttackPoint
   m_EditorClassIdentifier: 
-  id: {fileID: 11400000, guid: 9c0818b0b24a3664a8866a65dac0e3b8, type: 2}
