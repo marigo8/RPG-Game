@@ -136,8 +136,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentIdContainer: {fileID: 11400000, guid: ffac261d58248224a8b3b4033a76ac1e, type: 2}
   states:
-  - name: Move and Rotate Input
-    id: {fileID: 11400000, guid: ee873ec2f648e7f4eb04486baba10522, type: 2}
+  - name: Free Walk State
+    id: {fileID: 11400000, guid: d506b88bae558ae4f983834c4a12fc40, type: 2}
     onUpdate:
       m_PersistentCalls:
         m_Calls:
@@ -165,30 +165,8 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - name: No Input
-    id: {fileID: 11400000, guid: 8f9c490e8576527418e855477ed6bcc0, type: 2}
-    onUpdate:
-      m_PersistentCalls:
-        m_Calls: []
-  - name: Move Input Only
-    id: {fileID: 11400000, guid: 0f3e20c60fc8aa14fb93b4de404cd242, type: 2}
-    onUpdate:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 3450879066719559871}
-          m_TargetAssemblyTypeName: PlayerMoveBehaviour, Assembly-CSharp
-          m_MethodName: InputMove
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - name: Rotate Input Only
-    id: {fileID: 11400000, guid: ce7c9d5935b536f4d8bf7fb040f00afb, type: 2}
+  - name: Dialogue State
+    id: {fileID: 11400000, guid: e29e48cc4cdbd964b9360ce6ffb16245, type: 2}
     onUpdate:
       m_PersistentCalls:
         m_Calls:
@@ -232,7 +210,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actionEventPairs:
-  - action: {fileID: 11400000, guid: 1673d952268fe39479c52564fcbee477, type: 2}
+  - name: Free Walk Action
+    action: {fileID: 11400000, guid: 1a4970ae52d5efa4984dfef186592728, type: 2}
     actionEvent:
       m_PersistentCalls:
         m_Calls:
@@ -241,14 +220,15 @@ MonoBehaviour:
           m_MethodName: ChangeID
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: ce7c9d5935b536f4d8bf7fb040f00afb, type: 2}
+            m_ObjectArgument: {fileID: 11400000, guid: d506b88bae558ae4f983834c4a12fc40, type: 2}
             m_ObjectArgumentAssemblyTypeName: ID, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - action: {fileID: 11400000, guid: 1a4970ae52d5efa4984dfef186592728, type: 2}
+  - name: Dialogue Action
+    action: {fileID: 11400000, guid: 1673d952268fe39479c52564fcbee477, type: 2}
     actionEvent:
       m_PersistentCalls:
         m_Calls:
@@ -257,7 +237,7 @@ MonoBehaviour:
           m_MethodName: ChangeID
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: ee873ec2f648e7f4eb04486baba10522, type: 2}
+            m_ObjectArgument: {fileID: 11400000, guid: e29e48cc4cdbd964b9360ce6ffb16245, type: 2}
             m_ObjectArgumentAssemblyTypeName: ID, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0

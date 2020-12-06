@@ -8,6 +8,8 @@ public class ActionEventsBehaviour : EventsBehaviour
     [System.Serializable]
     public struct ActionEventPair
     {
+        public string name;
+        
         public GameAction action;
 
         public UnityEvent actionEvent;
