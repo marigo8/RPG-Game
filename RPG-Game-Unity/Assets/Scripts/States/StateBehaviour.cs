@@ -10,7 +10,7 @@ public class StateBehaviour : MonoBehaviour
     {
         public string name;
         public ID id;
-        public UnityEvent onUpdate;
+        public UnityEvent onStateEnter, onUpdate;
     }
 
     public IDContainer currentIdContainer;
@@ -24,6 +24,7 @@ public class StateBehaviour : MonoBehaviour
         {
             if (state.id != currentIdContainer.id) continue;
             currentState = state;
+            currentState.onStateEnter.Invoke();
             return;
         }
         // Default

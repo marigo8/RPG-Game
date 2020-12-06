@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &687604198292885827
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6885290881562780215}
+  m_Layer: 0
+  m_Name: Idle Point
+  m_TagString: Untagged
+  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6885290881562780215
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687604198292885827}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4438527034785332472}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2054314470692605282
 GameObject:
   m_ObjectHideFlags: 0
@@ -28,6 +58,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8254342036691865036}
+  - {fileID: 6885290881562780215}
   - {fileID: 2761153595351733497}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -60,7 +91,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4438527034785332472}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7886990381586845670
 GameObject:
@@ -73,10 +104,11 @@ GameObject:
   - component: {fileID: 8254342036691865036}
   - component: {fileID: 1950202976703260925}
   - component: {fileID: 5393400805980731471}
-  - component: {fileID: 4349568784050330613}
-  - component: {fileID: 1730340429492158268}
+  - component: {fileID: 4184903476727932541}
+  - component: {fileID: 6047292705140576592}
+  - component: {fileID: 372240112013012304}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Character
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -145,21 +177,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &4349568784050330613
-CapsuleCollider:
+--- !u!195 &4184903476727932541
+NavMeshAgent:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7886990381586845670}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
+  m_AgentTypeID: 0
   m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
   m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1730340429492158268
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &6047292705140576592
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,10 +208,60 @@ MonoBehaviour:
   m_GameObject: {fileID: 7886990381586845670}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b32a29bc416e8e41aa9e394970951a5, type: 3}
+  m_Script: {fileID: 11500000, guid: 02de5a0e1864d9e4898df930693bb00d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 0}
-  idlePoint: {fileID: 4438527034785332472}
-  attackPoint: {fileID: 2761153595351733497}
-  offset: {x: 0, y: 1, z: 0}
+--- !u!114 &372240112013012304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7886990381586845670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0923dc0471b5204b86298b0eacd97ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentIdContainer: {fileID: 11400000, guid: 683dab43a7d16e24ea054206aa54e171, type: 2}
+  states:
+  - name: Idle State
+    id: {fileID: 11400000, guid: 9c0818b0b24a3664a8866a65dac0e3b8, type: 2}
+    onStateEnter:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6047292705140576592}
+          m_TargetAssemblyTypeName: AgentDestinationBehaviour, Assembly-CSharp
+          m_MethodName: SetDestination
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 6885290881562780215}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    onUpdate:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Attack State
+    id: {fileID: 11400000, guid: 1f0b02090a2032544ae78ef0e7783f98, type: 2}
+    onStateEnter:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6047292705140576592}
+          m_TargetAssemblyTypeName: AgentDestinationBehaviour, Assembly-CSharp
+          m_MethodName: SetDestination
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 2761153595351733497}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    onUpdate:
+      m_PersistentCalls:
+        m_Calls: []
