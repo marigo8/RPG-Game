@@ -4,8 +4,7 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class PlayerMoveBehaviour : MonoBehaviour
 {
-    public CharacterData character;
-    public FloatData camRotateSpeed;
+    public FloatData moveSpeed, runSpeed, camRotateSpeed;
     
     private NavMeshAgent agent;
     private Vector3 movement;
@@ -27,15 +26,15 @@ public class PlayerMoveBehaviour : MonoBehaviour
         movement = transform.TransformDirection(movement);
 
         // Move Speed
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (!Input.GetKey(KeyCode.LeftShift))
         {
-            movement *= character.runSpeed.value;
+            movement *= moveSpeed.value;
         }
         else
         {
-            movement *= character.moveSpeed.value;
+            movement *= runSpeed.value;
         }
-        
+
         // Apply
         agent.Move(movement * Time.deltaTime);
     }

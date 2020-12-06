@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3450879066719559744}
   - component: {fileID: 1306979191304246314}
   - component: {fileID: 3450879066719559871}
+  - component: {fileID: 399528458}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -133,7 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0923dc0471b5204b86298b0eacd97ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentId: {fileID: 11400000, guid: ee873ec2f648e7f4eb04486baba10522, type: 2}
+  currentIdContainer: {fileID: 11400000, guid: ffac261d58248224a8b3b4033a76ac1e, type: 2}
   states:
   - name: Move and Rotate Input
     id: {fileID: 11400000, guid: ee873ec2f648e7f4eb04486baba10522, type: 2}
@@ -215,5 +216,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d13c4b7784bc6554fa98dcfdb35c3a0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 11400000, guid: 9be883fa32d39324995b1bd1a91e38dc, type: 2}
+  moveSpeed: {fileID: 11400000, guid: d429bd8b58231d145816be404b28c849, type: 2}
+  runSpeed: {fileID: 11400000, guid: b37fb02ed60139b4091c36b4e7e2a033, type: 2}
   camRotateSpeed: {fileID: 11400000, guid: 51000c259c2787a429bbb3c908cc35be, type: 2}
+--- !u!114 &399528458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3450879066719559866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c9710f7836465441b139ce9a7a6c044, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionEventPairs:
+  - action: {fileID: 11400000, guid: 1673d952268fe39479c52564fcbee477, type: 2}
+    actionEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: ffac261d58248224a8b3b4033a76ac1e, type: 2}
+          m_TargetAssemblyTypeName: IDContainer, Assembly-CSharp
+          m_MethodName: ChangeID
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: ce7c9d5935b536f4d8bf7fb040f00afb, type: 2}
+            m_ObjectArgumentAssemblyTypeName: ID, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - action: {fileID: 11400000, guid: 1a4970ae52d5efa4984dfef186592728, type: 2}
+    actionEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: ffac261d58248224a8b3b4033a76ac1e, type: 2}
+          m_TargetAssemblyTypeName: IDContainer, Assembly-CSharp
+          m_MethodName: ChangeID
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: ee873ec2f648e7f4eb04486baba10522, type: 2}
+            m_ObjectArgumentAssemblyTypeName: ID, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
