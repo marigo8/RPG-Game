@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3450879066719559870}
   - component: {fileID: 3450879066719559869}
   - component: {fileID: 3450879066719559868}
-  - component: {fileID: 3450879066719559867}
+  - component: {fileID: 464379429144486720}
   - component: {fileID: 3450879066719559744}
   - component: {fileID: 1306979191304246314}
   - component: {fileID: 3450879066719559871}
@@ -86,8 +86,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &3450879066719559867
-CapsuleCollider:
+--- !u!143 &464379429144486720
+CharacterController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -96,9 +96,13 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
+  serializedVersion: 2
   m_Height: 2
-  m_Direction: 1
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!195 &3450879066719559744
 NavMeshAgent:
@@ -138,6 +142,9 @@ MonoBehaviour:
   states:
   - name: Free Walk State
     id: {fileID: 11400000, guid: d506b88bae558ae4f983834c4a12fc40, type: 2}
+    onStateEnter:
+      m_PersistentCalls:
+        m_Calls: []
     onUpdate:
       m_PersistentCalls:
         m_Calls:
@@ -167,6 +174,9 @@ MonoBehaviour:
           m_CallState: 2
   - name: Dialogue State
     id: {fileID: 11400000, guid: e29e48cc4cdbd964b9360ce6ffb16245, type: 2}
+    onStateEnter:
+      m_PersistentCalls:
+        m_Calls: []
     onUpdate:
       m_PersistentCalls:
         m_Calls:
@@ -182,6 +192,15 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  defaultState:
+    name: 
+    id: {fileID: 0}
+    onStateEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    onUpdate:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!114 &3450879066719559871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,7 +246,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - name: Dialogue Action
+  - name: Dialogue Enter
     action: {fileID: 11400000, guid: 1673d952268fe39479c52564fcbee477, type: 2}
     actionEvent:
       m_PersistentCalls:
@@ -238,6 +257,23 @@ MonoBehaviour:
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 11400000, guid: e29e48cc4cdbd964b9360ce6ffb16245, type: 2}
+            m_ObjectArgumentAssemblyTypeName: ID, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: Dialogue Exit
+    action: {fileID: 11400000, guid: 385b3f5415d61994ea0821e950645e93, type: 2}
+    actionEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: ffac261d58248224a8b3b4033a76ac1e, type: 2}
+          m_TargetAssemblyTypeName: IDContainer, Assembly-CSharp
+          m_MethodName: ChangeID
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: d506b88bae558ae4f983834c4a12fc40, type: 2}
             m_ObjectArgumentAssemblyTypeName: ID, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0

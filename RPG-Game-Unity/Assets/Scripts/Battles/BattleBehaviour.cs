@@ -24,7 +24,7 @@ public class BattleBehaviour : MonoBehaviour
             {
                 var fighter = sceneFighters[i].GetChildWithId(fighterID);
 
-                fighter.GetComponent<MeshRenderer>().material.color = assetFighters[i].debugColor;
+                fighter.GetComponent<MeshRenderer>().material.color = assetFighters[i].color;
             }
             else
             {

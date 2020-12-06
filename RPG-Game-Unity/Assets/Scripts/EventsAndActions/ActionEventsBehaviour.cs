@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
 
@@ -36,7 +37,7 @@ public class ActionEventsBehaviour : EventsBehaviour
 
     public List<ActionEventPair> actionEventPairs = new List<ActionEventPair>(1);
 
-    private void Start()
+    private void OnEnable()
     {
         foreach (var pair in actionEventPairs)
         {
