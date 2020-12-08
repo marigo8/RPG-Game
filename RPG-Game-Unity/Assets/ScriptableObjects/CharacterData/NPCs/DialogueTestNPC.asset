@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: DialogueTestNPC
   m_EditorClassIdentifier: 
   characterName: Kazooie
-  debugColor: {r: 0, g: 0.3627696, b: 1, a: 1}
+  color: {r: 0, g: 0.38431373, b: 1, a: 1}

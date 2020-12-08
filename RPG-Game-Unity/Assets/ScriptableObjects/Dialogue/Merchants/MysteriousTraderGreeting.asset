@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6589b13fca433b4ebd36ace25f6a08a, type: 3}
+  m_Name: MysteriousTraderGreeting
+  m_EditorClassIdentifier: 
+  onDialogueStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onDialogueEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  lines:
+  - character: {fileID: 11400000, guid: ebc4a1bf37c8f4147894e8e5be119153, type: 2}
+    text: Greetings traveler.
+    lineData:
+      hideName: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - character: {fileID: 11400000, guid: 9be883fa32d39324995b1bd1a91e38dc, type: 2}
+    text: I've lived here my whole life, and have never seen you before. I think
+      that makes you the traveler.
+    lineData:
+      hideName: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - character: {fileID: 11400000, guid: ebc4a1bf37c8f4147894e8e5be119153, type: 2}
+    text: Not important.
+    lineData:
+      hideName: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - character: {fileID: 0}
+    text: Allow me to introduce myself.
+    lineData:
+      hideName: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - character: {fileID: 0}
+    text: 'I am the <key>Mysterious Traveling Merchant</key>! '
+    lineData:
+      hideName: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - character: {fileID: 0}
+    text: I have traveled far and wide. Buying and selling across the land.
+    lineData:
+      hideName: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - character: {fileID: 0}
+    text: What do I buy?
+    lineData:
+      hideName: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - character: {fileID: 0}
+    text: <key>Anything</key>.
+    lineData:
+      hideName: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - character: {fileID: 0}
+    text: What do I sell?
+    lineData:
+      hideName: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - character: {fileID: 0}
+    text: <key>Everything</key>.
+    lineData:
+      hideName: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - character: {fileID: 0}
+    text: '<size=10>Disclaimer: I don''t actually sell everything. I just sell what
+      I have at the time. I also don''t buy important quest items and the like.</size>'
+    lineData:
+      hideName: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - character: {fileID: 0}
+    text: Now, how can I help you today?
+    lineData:
+      hideName: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - character: {fileID: 11400000, guid: 9be883fa32d39324995b1bd1a91e38dc, type: 2}
+    text: What's your name?
+    lineData:
+      hideName: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - character: {fileID: 11400000, guid: ebc4a1bf37c8f4147894e8e5be119153, type: 2}
+    text: Not important.
+    lineData:
+      hideName: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - character: {fileID: 11400000, guid: 9be883fa32d39324995b1bd1a91e38dc, type: 2}
+    text: Not much of an introduction then.
+    lineData:
+      hideName: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []

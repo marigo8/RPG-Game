@@ -4,6 +4,9 @@ using UnityEngine.Events;
 [RequireComponent(typeof(Collider))]
 public class InteractionEventsBehaviour : EventsBehaviour
 {
+    public IDContainer playerState;
+    public ID requiredState;
+    
     public bool holdButtonDown;
     public UnityEvent onInteractionEvent, triggerEnterEvent, triggerExitEvent;
     
@@ -12,6 +15,7 @@ public class InteractionEventsBehaviour : EventsBehaviour
     private void Update()
     {
         if (!ready) return;
+        if (playerState.id != requiredState) return;
         if (holdButtonDown)
         {
             if (Input.GetButton("Submit"))

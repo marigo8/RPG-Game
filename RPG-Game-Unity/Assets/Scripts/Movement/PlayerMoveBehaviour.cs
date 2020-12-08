@@ -41,7 +41,7 @@ public class PlayerMoveBehaviour : MonoBehaviour
 
     public void InputRotation()
     {
-        var yInput = Input.GetAxis("Yaw");
+        var yInput = Input.GetAxis("Mouse X");
 
         var rotation = transform.eulerAngles;
         rotation.y += yInput * camRotateSpeed.value * Time.deltaTime;

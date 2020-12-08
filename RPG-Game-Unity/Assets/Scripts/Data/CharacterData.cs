@@ -5,5 +5,5 @@ using UnityEngine.Serialization;
 public class CharacterData : ScriptableObject
 {
     public string characterName;
-    public Color color;
+    public Color color = Color.black;
 }

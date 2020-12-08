@@ -15,11 +15,6 @@ MonoBehaviour:
   enterAction: {fileID: 11400000, guid: 1673d952268fe39479c52564fcbee477, type: 2}
   lineAction: {fileID: 11400000, guid: 3b6c43361c9205747b16beb70307cc8b, type: 2}
   exitAction: {fileID: 11400000, guid: 385b3f5415d61994ea0821e950645e93, type: 2}
-  currentLine:
-    character: {fileID: 0}
-    text: 
-    lineData:
-      hideName: 0
-      lineEvent:
-        m_PersistentCalls:
-          m_Calls: []
+  textTags:
+  - name: key
+    color: {r: 0.13069598, g: 0.7219392, b: 0.8396226, a: 1}
