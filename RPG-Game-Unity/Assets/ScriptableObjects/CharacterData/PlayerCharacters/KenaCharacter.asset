@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: KenaCharacter
   m_EditorClassIdentifier: 
   characterName: Kena
-  color: {r: 0.09313814, g: 0.33417094, b: 0.8584906, a: 1}
+  color: {r: 0.13679248, g: 0.40682143, b: 1, a: 1}

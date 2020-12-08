@@ -20,7 +20,7 @@ MonoBehaviour:
       m_Calls: []
   lines:
   - character: {fileID: 11400000, guid: 8367fc4663684cc419dfa78aca3dbd03, type: 2}
-    text: YOU CAN NOT HANDLE MY <key>POTIONS</key>!
+    text: <size=48>YOU CAN NOT HANDLE MY <key>POTIONS</key>!</size>
     lineData:
       hideName: 0
       lineEvent:
@@ -34,14 +34,16 @@ MonoBehaviour:
         m_PersistentCalls:
           m_Calls: []
   - character: {fileID: 0}
-    text: I have potions that could heal you, give you attack buffs, or worse...
+    text: I have potions that could <key>heal</key> you, give you <key>attack buffs</key>,
+      or worse...
     lineData:
       hideName: 0
       lineEvent:
         m_PersistentCalls:
           m_Calls: []
   - character: {fileID: 0}
-    text: I have a very expensive potion that lets you do more things in one turn!
+    text: I have a very expensive potion that lets you do <key>more things in one
+      turn</key>!
     lineData:
       hideName: 0
       lineEvent:

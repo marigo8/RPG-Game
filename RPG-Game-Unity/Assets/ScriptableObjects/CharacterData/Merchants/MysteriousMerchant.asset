@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: MysteriousMerchant
   m_EditorClassIdentifier: 
   characterName: Mysterious Merchant
-  color: {r: 0.43052867, g: 0.12001601, b: 0.8207547, a: 1}
+  color: {r: 0.6038529, g: 0.28773582, b: 1, a: 1}
