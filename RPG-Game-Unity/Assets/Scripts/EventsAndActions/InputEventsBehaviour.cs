@@ -35,7 +35,7 @@ public class InputEventsBehaviour : EventsBehaviour
             {
                 if (Input.GetKeyDown(name))
                 {
-                    inputEvent.Invoke();
+                    inputDownEvent.Invoke();
                 }
 
                 if (Input.GetKey(name))
@@ -45,7 +45,7 @@ public class InputEventsBehaviour : EventsBehaviour
 
                 if (Input.GetKeyUp(name))
                 {
-                    inputEvent.Invoke();
+                    inputUpEvent.Invoke();
                 }
             }
         }
