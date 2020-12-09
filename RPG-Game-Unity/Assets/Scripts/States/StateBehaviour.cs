@@ -15,7 +15,10 @@ public class StateBehaviour : MonoBehaviour
 
     public IDContainer currentIdContainer;
     public List<State> states = new List<State>(1);
-    public State defaultState;
+    public State defaultState = new State()
+    {
+        name = "default",
+    };
 
     private State currentState;
 
@@ -29,11 +32,15 @@ public class StateBehaviour : MonoBehaviour
             return;
         }
         // Default
+        if (currentState.id == defaultState.id) return;
         currentState = defaultState;
+        Debug.Log("Invoking Default onStateEnter");
+        currentState.onStateEnter.Invoke();
     }
 
     private void Start()
     {
+        currentState = defaultState;
         ChangeState();
     }
 
