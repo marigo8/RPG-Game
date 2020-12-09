@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentIdContainer: {fileID: 11400000, guid: d931c34aedd73224fa42d1526f2636c6, type: 2}
   states:
-  - name: Camera Low
+  - name: Camera High
     id: {fileID: 11400000, guid: 90c0b4c53468570449de097cd7cbbf80, type: 2}
     onStateEnter:
       m_PersistentCalls:
@@ -64,11 +64,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 742648742, guid: f91915d9e0f8c18459ec8b76e54c8a9b, type: 3}
       propertyPath: m_FollowOffset.y
-      value: -0.5
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 742648742, guid: f91915d9e0f8c18459ec8b76e54c8a9b, type: 3}
       propertyPath: m_FollowOffset.z
-      value: -4
+      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 5799940482014640876, guid: f91915d9e0f8c18459ec8b76e54c8a9b, type: 3}
       propertyPath: m_RootOrder
@@ -80,27 +80,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5799940482014640876, guid: f91915d9e0f8c18459ec8b76e54c8a9b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5799940482014640876, guid: f91915d9e0f8c18459ec8b76e54c8a9b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -20.5
+      value: -28.5
       objectReference: {fileID: 0}
     - target: {fileID: 5799940482014640876, guid: f91915d9e0f8c18459ec8b76e54c8a9b, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9925076
+      value: 0.9278977
       objectReference: {fileID: 0}
     - target: {fileID: 5799940482014640876, guid: f91915d9e0f8c18459ec8b76e54c8a9b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.12218327
+      value: 0.37283495
       objectReference: {fileID: 0}
     - target: {fileID: 5799940482014640876, guid: f91915d9e0f8c18459ec8b76e54c8a9b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000017077465
+      value: 0.000000015965764
       objectReference: {fileID: 0}
     - target: {fileID: 5799940482014640876, guid: f91915d9e0f8c18459ec8b76e54c8a9b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000021023319
+      value: -0.000000006415141
       objectReference: {fileID: 0}
     - target: {fileID: 5799940482014640876, guid: f91915d9e0f8c18459ec8b76e54c8a9b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -116,7 +116,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5799940482014640878, guid: f91915d9e0f8c18459ec8b76e54c8a9b, type: 3}
       propertyPath: m_Name
-      value: Player Cam Low
+      value: Player Cam High
       objectReference: {fileID: 0}
     - target: {fileID: 5799940482014640879, guid: f91915d9e0f8c18459ec8b76e54c8a9b, type: 3}
       propertyPath: m_Follow
