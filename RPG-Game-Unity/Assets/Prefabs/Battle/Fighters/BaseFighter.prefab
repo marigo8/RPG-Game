@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 6633937530776665028}
   - component: {fileID: 6998079889263163134}
   - component: {fileID: 2572636818630429225}
-  - component: {fileID: 8014425106638950256}
   - component: {fileID: 3695321643608827509}
   m_Layer: 0
   m_Name: BaseFighter
@@ -22,7 +21,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3578438857201821656
 Transform:
   m_ObjectHideFlags: 0
@@ -135,53 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentIdContainer: {fileID: 11400000, guid: 281b55e60b4b5b449b9dfedc6f7dd91c, type: 2}
-  states:
-  - name: Select Fighter
-    id: {fileID: 11400000, guid: 48fd009336f3200428ab5e7f6f6e4f77, type: 2}
-    onStateEnter:
-      m_PersistentCalls:
-        m_Calls: []
-    onUpdate:
-      m_PersistentCalls:
-        m_Calls: []
-    stateEvent:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 11400000, guid: e14a084b3b9a2b845adb4027503b9274, type: 2}
-          m_TargetAssemblyTypeName: BattleController, Assembly-CSharp
-          m_MethodName: SelectFighter
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 6998079889263163134}
-            m_ObjectArgumentAssemblyTypeName: FighterBehaviour, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - name: Select Target
-    id: {fileID: 11400000, guid: 6e68d7755d2882d428c843016ac7e537, type: 2}
-    onStateEnter:
-      m_PersistentCalls:
-        m_Calls: []
-    onUpdate:
-      m_PersistentCalls:
-        m_Calls: []
-    stateEvent:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 11400000, guid: e14a084b3b9a2b845adb4027503b9274, type: 2}
-          m_TargetAssemblyTypeName: BattleController, Assembly-CSharp
-          m_MethodName: SelectTarget
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 6998079889263163134}
-            m_ObjectArgumentAssemblyTypeName: FighterBehaviour, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+  states: []
   defaultState:
     name: default
     id: {fileID: 0}
@@ -191,51 +144,12 @@ MonoBehaviour:
     onUpdate:
       m_PersistentCalls:
         m_Calls: []
+    onMouseDown:
+      m_PersistentCalls:
+        m_Calls: []
     stateEvent:
       m_PersistentCalls:
         m_Calls: []
---- !u!114 &8014425106638950256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8474050103238934957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f36602902c3b5e04cb2ce18f5b617696, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseDownEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2572636818630429225}
-        m_TargetAssemblyTypeName: StateBehaviour, Assembly-CSharp
-        m_MethodName: InvokeStateEvent
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 8014425106638950256}
-        m_TargetAssemblyTypeName: EventsBehaviour, Assembly-CSharp
-        m_MethodName: DebugEvent
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  mouseUpEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!136 &3695321643608827509
 CapsuleCollider:
   m_ObjectHideFlags: 0

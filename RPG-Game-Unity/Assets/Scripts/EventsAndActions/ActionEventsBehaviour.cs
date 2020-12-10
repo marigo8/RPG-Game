@@ -14,12 +14,14 @@ public class ActionEventsBehaviour : EventsBehaviour
         public GameAction action;
 
         public UnityEvent actionEvent;
+        public UnityEvent<GameObject> gameObjectActionEvent;
 
         public void Initialize()
         {
             if (action == null) return;
 
             action.Action += OnAction;
+            action.GameObjectAction += OnGameObjectAction;
         }
 
         public void Remove()
@@ -27,11 +29,17 @@ public class ActionEventsBehaviour : EventsBehaviour
             if (action == null) return;
 
             action.Action -= OnAction;
+            action.GameObjectAction -= OnGameObjectAction;
         }
 
         private void OnAction()
         {
             actionEvent.Invoke();
+        }
+
+        private void OnGameObjectAction(GameObject obj)
+        {
+            gameObjectActionEvent.Invoke(obj);
         }
     }
 

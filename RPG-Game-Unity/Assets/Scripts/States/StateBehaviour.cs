@@ -10,7 +10,7 @@ public class StateBehaviour : MonoBehaviour
     {
         public string name;
         public ID id;
-        public UnityEvent onStateEnter, onUpdate, stateEvent;
+        public UnityEvent onStateEnter, onUpdate, onMouseDown, stateEvent;
     }
 
     public IDContainer currentIdContainer;
@@ -39,7 +39,6 @@ public class StateBehaviour : MonoBehaviour
         // Default
         if (currentState.id == defaultState.id) return;
         currentState = defaultState;
-        Debug.Log("Invoking Default onStateEnter");
         currentState.onStateEnter.Invoke();
     }
 
@@ -55,5 +54,10 @@ public class StateBehaviour : MonoBehaviour
             ChangeState();
         
         currentState.onUpdate.Invoke();
+    }
+
+    private void OnMouseDown()
+    {
+        currentState.onMouseDown.Invoke();
     }
 }
