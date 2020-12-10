@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4567df7e6dc89ec499f89da9302e1d0a, type: 3}
+  m_Name: BattleController
+  m_EditorClassIdentifier: 
+  turnState: {fileID: 11400000, guid: 281b55e60b4b5b449b9dfedc6f7dd91c, type: 2}
+  playerTeam: {fileID: 11400000, guid: 04c39590e7f73a342b97047e48c69f9f, type: 2}
+  enemyTeam: {fileID: 11400000, guid: 232ca1b46a141c74b9215aa48ecdd4da, type: 2}
+  selectedFighter: {fileID: 0}
+  selectedTarget: {fileID: 0}

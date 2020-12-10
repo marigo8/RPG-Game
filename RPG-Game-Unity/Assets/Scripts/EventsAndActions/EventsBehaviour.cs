@@ -8,6 +8,11 @@ public class EventsBehaviour : MonoBehaviour
     {
         Debug.Log(message);
     }
+
+    public void DebugEvent(Object obj)
+    {
+        Debug.Log(obj.name);
+    }
     
     public void DestroyObject(GameObject other)
     {

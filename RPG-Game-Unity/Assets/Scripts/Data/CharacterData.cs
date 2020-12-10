@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Serialization;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "Character/basic")]
 public class CharacterData : ScriptableObject
 {
     public string characterName;

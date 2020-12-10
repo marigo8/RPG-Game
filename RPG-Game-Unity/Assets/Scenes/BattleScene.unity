@@ -852,30 +852,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 319552166908885374, guid: b19285cc97d6cd2449856785a80bed73, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 319552166908885374, guid: b19285cc97d6cd2449856785a80bed73, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 319552166908885374, guid: b19285cc97d6cd2449856785a80bed73, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5581591745112318837, guid: b19285cc97d6cd2449856785a80bed73, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5581591745112318837, guid: b19285cc97d6cd2449856785a80bed73, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5581591745112318837, guid: b19285cc97d6cd2449856785a80bed73, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 4952175165308866520, guid: b19285cc97d6cd2449856785a80bed73, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 11400000, guid: e14a084b3b9a2b845adb4027503b9274, type: 2}
     - target: {fileID: 6555609213183638559, guid: b19285cc97d6cd2449856785a80bed73, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -920,14 +900,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7473911088492414146, guid: b19285cc97d6cd2449856785a80bed73, type: 3}
-      propertyPath: fighterID
-      value: 
-      objectReference: {fileID: 11400000, guid: aa0365c244a7f3a4580f4d737dec23b5, type: 2}
-    - target: {fileID: 7473911088492414146, guid: b19285cc97d6cd2449856785a80bed73, type: 3}
-      propertyPath: attackPointID
-      value: 
-      objectReference: {fileID: 11400000, guid: 07840d63e742d9d49be295043b413dcb, type: 2}
     - target: {fileID: 8870290806368650414, guid: b19285cc97d6cd2449856785a80bed73, type: 3}
       propertyPath: m_Name
       value: Battle
