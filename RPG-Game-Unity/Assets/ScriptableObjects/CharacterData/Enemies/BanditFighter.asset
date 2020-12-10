@@ -14,3 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Bandit
   color: {r: 1, g: 0, b: 0, a: 1}
+  mesh: {fileID: 0}
+  animatorController: {fileID: 0}
+  baseHealth: 50

@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c17b0af2bfc481444a828dc295d4e22a, type: 3}
-  m_Name: BanditBossFighter
+  m_Name: FighterKena
   m_EditorClassIdentifier: 
-  characterName: Bandit Boss
-  color: {r: 0.6603774, g: 0, b: 0, a: 1}
+  characterName: Kena
+  color: {r: 0.100302614, g: 0.55403286, b: 0.9245283, a: 1}
   mesh: {fileID: 0}
   animatorController: {fileID: 0}
   baseHealth: 100
+  skills:
+  - {fileID: 11400000, guid: 5f20d998845ce1045b1f83b15c7c6766, type: 2}

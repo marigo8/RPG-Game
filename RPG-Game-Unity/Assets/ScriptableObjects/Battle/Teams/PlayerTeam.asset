@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fighters:
   - {fileID: 11400000, guid: 23074db98bc31a7448bb6ea6f9bdb8a1, type: 2}
+  - {fileID: 11400000, guid: af48ebce112d06a48b60d7050368013d, type: 2}

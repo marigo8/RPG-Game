@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4567df7e6dc89ec499f89da9302e1d0a, type: 3}
-  m_Name: BattleController
+  m_Name: BattleData
   m_EditorClassIdentifier: 
   turnState: {fileID: 11400000, guid: 281b55e60b4b5b449b9dfedc6f7dd91c, type: 2}
   playerTeam: {fileID: 11400000, guid: 04c39590e7f73a342b97047e48c69f9f, type: 2}
   enemyTeam: {fileID: 11400000, guid: 232ca1b46a141c74b9215aa48ecdd4da, type: 2}
-  selectedFighter: {fileID: 0}
-  selectedTarget: {fileID: 0}
+  attackID: {fileID: 11400000, guid: b2ad8c3fcf92c614e9c11d51f72c4c76, type: 2}
+  supportID: {fileID: 11400000, guid: 620116874d4820d498f57024c123bcb2, type: 2}
+  defenceID: {fileID: 11400000, guid: ef65a2d0a8bff90469f92a6ac2254964, type: 2}

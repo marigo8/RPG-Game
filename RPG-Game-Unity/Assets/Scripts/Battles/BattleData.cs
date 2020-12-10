@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Controllers/Battle")]
-public class BattleController : ScriptableObject
+public class BattleData : ScriptableObject
 {
     public IDContainer turnState;
     public TeamData playerTeam, enemyTeam;
+
+    public ID attackID, supportID, defenceID;
 }

@@ -5,8 +5,7 @@ using UnityEngine.Serialization;
 
 public class TeamBehaviour : MonoBehaviour
 {
-    public BattleController controller;
-    [FormerlySerializedAs("fighters")] public List<FighterBehaviour> fighterBehaviours;
+    public List<FighterBehaviour> fighterBehaviours;
 
     public void SetUpTeam(TeamData teamData)
     {
