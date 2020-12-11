@@ -26,7 +26,7 @@ MonoBehaviour:
       lineEvent:
         m_PersistentCalls:
           m_Calls: []
-  - character: {fileID: 11400000, guid: 9be883fa32d39324995b1bd1a91e38dc, type: 2}
+  - character: {fileID: 11400000, guid: 23074db98bc31a7448bb6ea6f9bdb8a1, type: 2}
     text: I've lived here my whole life, and have never seen you before. I think
       that makes you the traveler.
     lineData:
@@ -105,7 +105,7 @@ MonoBehaviour:
       lineEvent:
         m_PersistentCalls:
           m_Calls: []
-  - character: {fileID: 11400000, guid: 9be883fa32d39324995b1bd1a91e38dc, type: 2}
+  - character: {fileID: 11400000, guid: 23074db98bc31a7448bb6ea6f9bdb8a1, type: 2}
     text: What's your name?
     lineData:
       hideName: 0
@@ -119,7 +119,7 @@ MonoBehaviour:
       lineEvent:
         m_PersistentCalls:
           m_Calls: []
-  - character: {fileID: 11400000, guid: 9be883fa32d39324995b1bd1a91e38dc, type: 2}
+  - character: {fileID: 11400000, guid: 23074db98bc31a7448bb6ea6f9bdb8a1, type: 2}
     text: Not much of an introduction then.
     lineData:
       hideName: 0
