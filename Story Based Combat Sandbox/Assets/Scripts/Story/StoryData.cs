@@ -19,7 +19,6 @@ public class StoryData : ScriptableObject
     [System.Serializable]
     public struct LineData
     {
-        public bool hideName;
         public UnityEvent lineEvent;
     }
 
