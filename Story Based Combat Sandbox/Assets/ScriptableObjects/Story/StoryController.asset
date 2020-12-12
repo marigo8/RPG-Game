@@ -12,11 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe351893f7cb84044a33865e58546a9a, type: 3}
   m_Name: StoryController
   m_EditorClassIdentifier: 
-  story: {fileID: 11400000, guid: 245ecab40818d464bb32a824efcea325, type: 2}
-  lineIndex: 9
+  story: {fileID: 11400000, guid: 2a528f7e01a7ac14390242d7d8440356, type: 2}
+  lineIndex: 3
   startAction: {fileID: 11400000, guid: d6bf259e4b986bb44848ca34b65cf490, type: 2}
   lineAction: {fileID: 11400000, guid: 73f1f1da12307ce41949ea078c13ec3b, type: 2}
   optionsAction: {fileID: 11400000, guid: 01e315082c4136045825146b81243fd9, type: 2}
+  optionsRoot:
+    name: root
+    subOptions: []
+    optionEvent:
+      m_PersistentCalls:
+        m_Calls: []
   textTags:
   - name: key
     color: {r: 0, g: 0.75245667, b: 1, a: 1}

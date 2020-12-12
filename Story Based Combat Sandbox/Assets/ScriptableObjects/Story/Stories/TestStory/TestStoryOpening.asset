@@ -31,13 +31,35 @@ MonoBehaviour:
         m_PersistentCalls:
           m_Calls: []
   options:
-  - name: 
-    id: {fileID: 0}
+  - name: Eben/Item/Gold/Deceive
     optionEvent:
       m_PersistentCalls:
-        m_Calls: []
-  - name: 
-    id: {fileID: 0}
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 02ba7d48a4037dc49a3accaa5e8059f5, type: 2}
+          m_TargetAssemblyTypeName: StoryController, Assembly-CSharp
+          m_MethodName: StartStory
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 2a528f7e01a7ac14390242d7d8440356, type: 2}
+            m_ObjectArgumentAssemblyTypeName: StoryData, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: Eben/Item/Broom/Attack
     optionEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 02ba7d48a4037dc49a3accaa5e8059f5, type: 2}
+          m_TargetAssemblyTypeName: StoryController, Assembly-CSharp
+          m_MethodName: StartStory
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 88a93fae6cbe77e488ba42ab1a329139, type: 2}
+            m_ObjectArgumentAssemblyTypeName: StoryData, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2

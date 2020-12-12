@@ -31,6 +31,7 @@ public class ActionEventsBehaviour : EventsBehaviour
 
         private void OnAction()
         {
+            Debug.Log($"{name}: handling action");
             actionEvent.Invoke();
         }
     }

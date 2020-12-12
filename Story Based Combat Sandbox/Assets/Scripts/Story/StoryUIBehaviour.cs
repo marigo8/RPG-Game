@@ -7,6 +7,7 @@ public class StoryUIBehaviour : MonoBehaviour
 {
     public StoryController controller;
     public Text nameText, dialogueText;
+    public GameObject namePanel;
 
     public void Start()
     {
@@ -27,7 +28,16 @@ public class StoryUIBehaviour : MonoBehaviour
 
     public void DisplayName()
     {
-        var characterName = controller.CurrentLine.character.characterName;
+        var character = controller.CurrentLine.character;
+        if (character == null)
+        {
+            namePanel.SetActive(false);
+            return;
+        }
+        namePanel.SetActive(true);
+        
+        var characterName = character.characterName;
+        
         characterName = controller.ParseTags(characterName);
 
         nameText.text = characterName;
