@@ -505,13 +505,13 @@ MonoBehaviour:
   onInteractionEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 9ee7da2b1f0f4384589b07e747029496, type: 2}
-        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
-        m_MethodName: StartDialogue
+      - m_Target: {fileID: 11400000, guid: 02ba7d48a4037dc49a3accaa5e8059f5, type: 2}
+        m_TargetAssemblyTypeName: StoryController, Assembly-CSharp
+        m_MethodName: StartStory
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: DialogueData, Assembly-CSharp
+          m_ObjectArgumentAssemblyTypeName: StoryData, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

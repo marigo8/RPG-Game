@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8804bbdba7c43443b2c296864cb2130, type: 3}
+  m_Name: MysteriousGreeting
+  m_EditorClassIdentifier: 
+  onStart:
+    m_PersistentCalls:
+      m_Calls: []
+  lines:
+  - name: Greetings Traveler.
+    character: {fileID: 11400000, guid: 0b50d18e027a24b4cb157181ebec7514, type: 2}
+    lineData:
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - name: I've lived here my whole life and have never seen you before. I think that
+      makes you the traveler.
+    character: {fileID: 11400000, guid: 8f67662d23479af4faba2f68ea533298, type: 2}
+    lineData:
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - name: Not important
+    character: {fileID: 11400000, guid: 0b50d18e027a24b4cb157181ebec7514, type: 2}
+    lineData:
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - name: Allow me to introduce myself.
+    character: {fileID: 11400000, guid: 0b50d18e027a24b4cb157181ebec7514, type: 2}
+    lineData:
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - name: I am the <key>Mysterious Traveling Merchant</key>!
+    character: {fileID: 11400000, guid: 0b50d18e027a24b4cb157181ebec7514, type: 2}
+    lineData:
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - name: I have traveled far and wide. Buying and selling across the land.
+    character: {fileID: 11400000, guid: 0b50d18e027a24b4cb157181ebec7514, type: 2}
+    lineData:
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - name: What do I buy?
+    character: {fileID: 11400000, guid: 0b50d18e027a24b4cb157181ebec7514, type: 2}
+    lineData:
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - name: <key>Anything</key>.
+    character: {fileID: 11400000, guid: 0b50d18e027a24b4cb157181ebec7514, type: 2}
+    lineData:
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - name: What do I sell?
+    character: {fileID: 11400000, guid: 0b50d18e027a24b4cb157181ebec7514, type: 2}
+    lineData:
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - name: <key>Everything</key>.
+    character: {fileID: 11400000, guid: 0b50d18e027a24b4cb157181ebec7514, type: 2}
+    lineData:
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - name: '<size=10>Disclaimer: I don''t actually sell everything. I just sell what
+      I have at the time. I also don''t buy important quest items and the like.</size>'
+    character: {fileID: 11400000, guid: 0b50d18e027a24b4cb157181ebec7514, type: 2}
+    lineData:
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - name: Now, how can I help you today?
+    character: {fileID: 11400000, guid: 0b50d18e027a24b4cb157181ebec7514, type: 2}
+    lineData:
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - name: What's your name?
+    character: {fileID: 11400000, guid: 8f67662d23479af4faba2f68ea533298, type: 2}
+    lineData:
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - name: Not important.
+    character: {fileID: 11400000, guid: 0b50d18e027a24b4cb157181ebec7514, type: 2}
+    lineData:
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - name: Not much of an introduction then.
+    character: {fileID: 11400000, guid: 8f67662d23479af4faba2f68ea533298, type: 2}
+    lineData:
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - name: Are you going to buy something or what, kid?
+    character: {fileID: 11400000, guid: 0b50d18e027a24b4cb157181ebec7514, type: 2}
+    lineData:
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  options:
+  - name: '"Fine"'
+    optionEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: '"Nah"'
+    optionEvent:
+      m_PersistentCalls:
+        m_Calls: []
