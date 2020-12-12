@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using Debug = UnityEngine.Debug;
 
 [CreateAssetMenu(menuName = "Story/Controller")]
 public class StoryController : ScriptableObject
@@ -58,7 +57,7 @@ public class StoryController : ScriptableObject
 
     public StoryData.Line CurrentLine => story.lines[lineIndex];
 
-    public GameAction startAction, lineAction, optionsAction;
+    public GameAction startAction, lineAction, optionsAction, endAction;
     
     public Option optionsRoot = new Option("root");
 
@@ -75,11 +74,22 @@ public class StoryController : ScriptableObject
         lineAction.Raise();
     }
 
+    public void EndStory()
+    {
+        story = null;
+        endAction.Raise();
+    }
+
     public void NextLine()
     {
         lineIndex++;
         if (lineIndex >= story.lines.Capacity)
         {
+            if (story.options.Count == 0)
+            {
+                EndStory();
+                return;
+            }
             ParseOptionNames();
             optionsAction.Raise();
         }

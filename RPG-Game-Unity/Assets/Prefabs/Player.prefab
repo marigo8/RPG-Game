@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1306979191304246314}
   - component: {fileID: 3450879066719559871}
   - component: {fileID: 399528458}
+  - component: {fileID: 715823968}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -172,26 +173,26 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - name: Dialogue State
+    onMouseDown:
+      m_PersistentCalls:
+        m_Calls: []
+    stateEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Story State
     id: {fileID: 11400000, guid: e29e48cc4cdbd964b9360ce6ffb16245, type: 2}
     onStateEnter:
       m_PersistentCalls:
         m_Calls: []
     onUpdate:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 3450879066719559871}
-          m_TargetAssemblyTypeName: PlayerMoveBehaviour, Assembly-CSharp
-          m_MethodName: InputRotation
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
+    onMouseDown:
+      m_PersistentCalls:
+        m_Calls: []
+    stateEvent:
+      m_PersistentCalls:
+        m_Calls: []
   defaultState:
     name: 
     id: {fileID: 0}
@@ -199,6 +200,12 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     onUpdate:
+      m_PersistentCalls:
+        m_Calls: []
+    onMouseDown:
+      m_PersistentCalls:
+        m_Calls: []
+    stateEvent:
       m_PersistentCalls:
         m_Calls: []
 --- !u!114 &3450879066719559871
@@ -246,8 +253,8 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - name: Dialogue Enter
-    action: {fileID: 11400000, guid: 1673d952268fe39479c52564fcbee477, type: 2}
+  - name: Story Start
+    action: {fileID: 11400000, guid: d6bf259e4b986bb44848ca34b65cf490, type: 2}
     actionEvent:
       m_PersistentCalls:
         m_Calls:
@@ -263,8 +270,8 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - name: Dialogue Exit
-    action: {fileID: 11400000, guid: 385b3f5415d61994ea0821e950645e93, type: 2}
+  - name: Story End
+    action: {fileID: 11400000, guid: ae4ad4a7eb5c8394f92caea7a5586757, type: 2}
     actionEvent:
       m_PersistentCalls:
         m_Calls:
@@ -280,3 +287,30 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &715823968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3450879066719559866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c2068389f96afc4ebd202a5e1b709bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: ffac261d58248224a8b3b4033a76ac1e, type: 2}
+        m_TargetAssemblyTypeName: IDContainer, Assembly-CSharp
+        m_MethodName: ChangeID
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: d506b88bae558ae4f983834c4a12fc40, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ID, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

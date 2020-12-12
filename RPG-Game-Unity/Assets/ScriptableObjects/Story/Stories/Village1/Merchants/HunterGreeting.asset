@@ -28,7 +28,7 @@ MonoBehaviour:
       lineEvent:
         m_PersistentCalls:
           m_Calls: []
-  - name: You'll need these if you're planning on <key>traveling</ley>, since traveling
+  - name: You'll need these if you're planning on <key>traveling</key>, since traveling
       costs food.
     character: {fileID: 11400000, guid: 7f74d969b1ca83f478ecf6cb9dd5163b, type: 2}
     lineData:
@@ -49,4 +49,16 @@ MonoBehaviour:
   - name: '"No thanks."'
     optionEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 02ba7d48a4037dc49a3accaa5e8059f5, type: 2}
+          m_TargetAssemblyTypeName: StoryController, Assembly-CSharp
+          m_MethodName: EndStory
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2

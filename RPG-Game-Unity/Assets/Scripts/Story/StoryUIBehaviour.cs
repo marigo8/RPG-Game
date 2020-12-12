@@ -19,11 +19,23 @@ public class StoryUIBehaviour : MonoBehaviour
         gameObject.SetActive(true);
     }
 
+    public void OnStoryEnd()
+    {
+        gameObject.SetActive(false);
+    }
+
     public void DisplayDialogue()
     {
         var dialogue = controller.CurrentLine.name;
+        var character = controller.CurrentLine.character;
+        
         dialogue = controller.ParseTags(dialogue);
         dialogueText.text = dialogue;
+
+        if (character != null)
+        {
+            dialogueText.color = controller.CurrentLine.character.color;
+        }
     }
 
     public void DisplayName()
@@ -41,5 +53,6 @@ public class StoryUIBehaviour : MonoBehaviour
         characterName = controller.ParseTags(characterName);
 
         nameText.text = characterName;
+        nameText.color = character.color;
     }
 }

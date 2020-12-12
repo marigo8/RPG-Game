@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe351893f7cb84044a33865e58546a9a, type: 3}
-  m_Name: StoryController
+  m_Name: _StoryController
   m_EditorClassIdentifier: 
   story: {fileID: 11400000, guid: 0b14ce242b6aa964daba3450df185f1e, type: 2}
-  lineIndex: 17
+  lineIndex: 16
   startAction: {fileID: 11400000, guid: d6bf259e4b986bb44848ca34b65cf490, type: 2}
   lineAction: {fileID: 11400000, guid: a0f03f7c3b21d524ea340a6177b3dc7b, type: 2}
   optionsAction: {fileID: 11400000, guid: 8adb173b9304ae64f98bf9a35c45f9a9, type: 2}
+  endAction: {fileID: 11400000, guid: ae4ad4a7eb5c8394f92caea7a5586757, type: 2}
   textTags:
   - name: key
     color: {r: 0, g: 0.75245667, b: 1, a: 1}

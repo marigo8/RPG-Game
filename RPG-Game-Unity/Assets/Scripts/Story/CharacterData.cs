@@ -6,5 +6,5 @@ using UnityEngine;
 public class CharacterData : ScriptableObject
 {
     public string characterName;
-    public Color color = Color.black;
+    public Color color = Color.white;
 }
