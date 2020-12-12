@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class OptionsUIBehaviour : MonoBehaviour
@@ -35,6 +36,7 @@ public class OptionsUIBehaviour : MonoBehaviour
             {
                 button.onClick.AddListener(() => DisplaySubOptions(subOption));
             }
+            
         }
         if (option != controller.optionsRoot)
         {

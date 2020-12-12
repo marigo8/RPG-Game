@@ -19,19 +19,17 @@ MonoBehaviour:
   - name: Hey you!
     character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
     lineData:
-      hideName: 0
       lineEvent:
         m_PersistentCalls:
           m_Calls: []
   - name: This is a bandit raid. Hand over your gold or else...!
     character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
     lineData:
-      hideName: 0
       lineEvent:
         m_PersistentCalls:
           m_Calls: []
   options:
-  - name: Eben/Item/Gold/Deceive
+  - name: Item/Gold/Deceive
     optionEvent:
       m_PersistentCalls:
         m_Calls:
@@ -47,7 +45,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - name: Eben/Item/Broom/Attack
+  - name: Item/Broom/Attack
     optionEvent:
       m_PersistentCalls:
         m_Calls:
