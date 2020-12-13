@@ -18,7 +18,7 @@ public class StoryData : ScriptableObject
     [System.Serializable]
     public struct LineData
     {
-        public float delay;
+        public bool pauseStory;
         public UnityEvent lineEvent;
     }
 

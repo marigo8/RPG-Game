@@ -58,7 +58,7 @@ public class StoryController : ScriptableObject
 
     public StoryData.Line CurrentLine => story.lines[lineIndex];
 
-    public GameAction startAction, lineAction, optionsAction, endAction;
+    public GameAction startAction, lineAction, optionsAction, endAction, pauseAction, resumeAction;
     
     public Option optionsRoot = new Option("root");
 

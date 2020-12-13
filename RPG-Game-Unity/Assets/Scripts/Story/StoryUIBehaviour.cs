@@ -31,11 +31,10 @@ public class StoryUIBehaviour : MonoBehaviour
     {
         DisplayDialogue();
         DisplayName();
-        var delay = controller.CurrentLine.lineData.delay;
 
-        if (delay > 0)
+        if (controller.CurrentLine.lineData.pauseStory)
         {
-            StartCoroutine(DelayLine(delay));
+            controller.pauseAction.Raise();
         }
     }
 

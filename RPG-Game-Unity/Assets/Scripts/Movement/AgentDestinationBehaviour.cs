@@ -8,8 +8,9 @@ using UnityEngine.Events;
 [RequireComponent(typeof(NavMeshAgent))]
 public class AgentDestinationBehaviour : MonoBehaviour
 {
-    public UnityEvent onDestination;
-    
+    public GameAction onDestinationAction;
+    public UnityEvent onDestinationEvent;
+
     private NavMeshAgent agent;
 
     private void Start()
@@ -27,6 +28,11 @@ public class AgentDestinationBehaviour : MonoBehaviour
         
     }
 
+    public void SetDestinationAction(GameAction action)
+    {
+        onDestinationAction = action;
+    }
+
     public void SetStoppingDistance(float stoppingDistance)
     {
         agent.stoppingDistance = stoppingDistance;
@@ -35,6 +41,12 @@ public class AgentDestinationBehaviour : MonoBehaviour
     public void SetDestination(Transform transformObj)
     {
         StartCoroutine(MoveToDestination(transformObj.position));
+    }
+
+    private void OnDestination()
+    {
+        onDestinationAction.Raise();
+        onDestinationEvent.Invoke();
     }
 
     private IEnumerator MoveToDestination(Vector3 destination)
@@ -48,7 +60,7 @@ public class AgentDestinationBehaviour : MonoBehaviour
         
         yield return new WaitWhile(() => MoveAlongPath(path));
         
-        onDestination.Invoke();
+        OnDestination();
     }
 
     private bool MoveAlongPath(NavMeshPath path)
