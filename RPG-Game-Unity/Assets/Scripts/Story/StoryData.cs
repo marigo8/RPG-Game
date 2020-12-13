@@ -8,7 +8,6 @@ public class StoryData : ScriptableObject
     [System.Serializable]
     public struct Line
     {
-
         [TextArea()] 
         public string name; // the dialogue to display. Using "name" so that the inspector displays it instead of "Element 0, Element 1..."
         public CharacterData character;
