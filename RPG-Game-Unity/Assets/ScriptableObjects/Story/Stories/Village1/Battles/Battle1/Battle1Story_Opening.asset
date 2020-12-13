@@ -10,26 +10,50 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a8804bbdba7c43443b2c296864cb2130, type: 3}
-  m_Name: TestStoryOpening
+  m_Name: Battle1Story_Opening
   m_EditorClassIdentifier: 
   onStart:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: ae5987f62dc80764695040804acc3c68, type: 2}
+        m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   lines:
   - name: Hey you!
     character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
     lineData:
-      hideName: 0
+      delay: 0
       lineEvent:
         m_PersistentCalls:
           m_Calls: []
   - name: This is a bandit raid. Hand over your gold or else...!
     character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
     lineData:
-      hideName: 0
+      delay: 1
       lineEvent:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 8b1fdde3882308040a2d51d63df3946c, type: 2}
+            m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
+            m_MethodName: Raise
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
   options:
   - name: Eben/Item/Gold/Deceive
     optionEvent:
@@ -47,7 +71,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - name: Eben/Item/Broom/Attack
+  - name: Eben/Attack/Broom
     optionEvent:
       m_PersistentCalls:
         m_Calls:

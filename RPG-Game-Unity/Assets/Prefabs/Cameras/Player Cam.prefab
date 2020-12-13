@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5799940482014640876}
   - component: {fileID: 5799940482014640879}
+  - component: {fileID: 28487680}
+  - component: {fileID: 28487683}
   m_Layer: 0
   m_Name: Player Cam
   m_TagString: Untagged
@@ -67,6 +69,69 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 5799940483317383797}
+--- !u!114 &28487680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5799940482014640878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a7a05270cf722c40a9724671c30677c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMoveState: {fileID: 11400000, guid: ffac261d58248224a8b3b4033a76ac1e, type: 2}
+  sensitivity: {fileID: 11400000, guid: 2263f1f42dab6934a83d1d4244705ec2, type: 2}
+  min: -0.5
+  max: 5
+--- !u!114 &28487683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5799940482014640878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c9710f7836465441b139ce9a7a6c044, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionEventPairs:
+  - name: Story Start
+    action: {fileID: 11400000, guid: d6bf259e4b986bb44848ca34b65cf490, type: 2}
+    actionEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 28487680}
+          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+          m_MethodName: set_enabled
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: Story End
+    action: {fileID: 11400000, guid: ae4ad4a7eb5c8394f92caea7a5586757, type: 2}
+    actionEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 28487680}
+          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+          m_MethodName: set_enabled
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
 --- !u!1 &5799940483317383796
 GameObject:
   m_ObjectHideFlags: 0

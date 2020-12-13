@@ -19,6 +19,7 @@ public class StoryData : ScriptableObject
     [System.Serializable]
     public struct LineData
     {
+        public float delay;
         public UnityEvent lineEvent;
     }
 
@@ -34,4 +35,6 @@ public class StoryData : ScriptableObject
     public List<Line> lines;
 
     public List<Option> options;
+
+    public UnityEvent onEnd;
 }

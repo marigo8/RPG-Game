@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8804bbdba7c43443b2c296864cb2130, type: 3}
+  m_Name: Battle1Story_SpinMoveAttack
+  m_EditorClassIdentifier: 
+  onStart:
+    m_PersistentCalls:
+      m_Calls: []
+  lines:
+  - name: Eben attempts to overpower the bandit's spin move with his trusty broom...
+      but fails.
+    character: {fileID: 0}
+    lineData:
+      delay: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - name: It seems as though Eben was not ready for his spin move.
+    character: {fileID: 0}
+    lineData:
+      delay: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - name: Its a miracle he was able to see its beauty and live.
+    character: {fileID: 0}
+    lineData:
+      delay: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - name: Did you like my <intense>SPIN MOVE</intense>?!
+    character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
+    lineData:
+      delay: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - name: Are you in massive amounts of <intense>PAIN</intense>?!
+    character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
+    lineData:
+      delay: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  options: []
+  nextStory: {fileID: 0}

@@ -8,11 +8,12 @@ public class StoryUIBehaviour : MonoBehaviour
 {
     public StoryController controller;
     public Text nameText, dialogueText;
-    public GameObject namePanel;
+    public GameObject namePanel, dialoguePanel;
     public Color defaultColor = Color.white;
 
     public void Start()
     {
+        if (controller.story != null) return;
         gameObject.SetActive(false);
     }
 
@@ -26,10 +27,24 @@ public class StoryUIBehaviour : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public void DisplayDialogue()
+    public void DisplayLine()
     {
-        var dialogue = controller.CurrentLine.name;
-        var character = controller.CurrentLine.character;
+        DisplayDialogue();
+        DisplayName();
+        var delay = controller.CurrentLine.lineData.delay;
+
+        if (delay > 0)
+        {
+            StartCoroutine(DelayLine(delay));
+        }
+    }
+
+    private void DisplayDialogue()
+    {
+        var currentLine = controller.CurrentLine;
+        
+        var dialogue = currentLine.name;
+        var character = currentLine.character;
         
         dialogue = controller.ParseTags(dialogue);
         dialogueText.text = dialogue;
@@ -37,7 +52,7 @@ public class StoryUIBehaviour : MonoBehaviour
         dialogueText.color = character != null ? character.color : defaultColor;
     }
 
-    public void DisplayName()
+    private void DisplayName()
     {
         var character = controller.CurrentLine.character;
         if (character == null)
@@ -55,11 +70,26 @@ public class StoryUIBehaviour : MonoBehaviour
         nameText.color = character.color;
     }
 
-    public void Update()
+    private void Update()
     {
+        if (!dialoguePanel.activeSelf) return;
         if (Input.GetButtonDown("Submit"))
         {
             controller.NextLine();
         }
+    }
+
+    private IEnumerator DelayLine(float delay)
+    {
+        var dialogueActive = dialoguePanel.activeSelf;
+        var nameActive = namePanel.activeSelf;
+        
+        dialoguePanel.gameObject.SetActive(false);
+        namePanel.gameObject.SetActive(false);
+        
+        yield return new WaitForSeconds(delay);
+        
+        dialoguePanel.gameObject.SetActive(dialogueActive);
+        namePanel.gameObject.SetActive(nameActive);
     }
 }

@@ -1,0 +1,154 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8804bbdba7c43443b2c296864cb2130, type: 3}
+  m_Name: Battle1Story_BanditStrikesBack
+  m_EditorClassIdentifier: 
+  onStart:
+    m_PersistentCalls:
+      m_Calls: []
+  lines:
+  - name: You little punk!
+    character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
+    lineData:
+      delay: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - name: You really think you can get away with a stunt like that?
+    character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
+    lineData:
+      delay: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - name: You're going to pay for that.
+    character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
+    lineData:
+      delay: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - name: I'll make you pay with massive amounts of pain!
+    character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
+    lineData:
+      delay: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - name: Prepare yourself...
+    character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
+    lineData:
+      delay: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - name: <size=32><intense>FOR THE MASSIVE AMOUNTS OF PAIN THAT I'M ABOUT TO MAKE
+      YOU FEEL!</intense></size>
+    character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
+    lineData:
+      delay: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - name: In fact, you should feel honored.
+    character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
+    lineData:
+      delay: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - name: You're about to witness the beauty that no one has ever seen before and
+      lived!
+    character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
+    lineData:
+      delay: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - name: Are you ready...?!
+    character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
+    lineData:
+      delay: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - name: For my...
+    character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
+    lineData:
+      delay: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - name: <size=64><intense>SPIN MOVE?!</intense></size>
+    character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
+    lineData:
+      delay: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  - name: The bandit charges up his spin move.
+    character: {fileID: 0}
+    lineData:
+      delay: 0
+      lineEvent:
+        m_PersistentCalls:
+          m_Calls: []
+  options:
+  - name: Eben/Attack/Broom
+    optionEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 02ba7d48a4037dc49a3accaa5e8059f5, type: 2}
+          m_TargetAssemblyTypeName: StoryController, Assembly-CSharp
+          m_MethodName: StartStory
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 3d3d3486bb09e7b47ab33f6487b3f4f1, type: 2}
+            m_ObjectArgumentAssemblyTypeName: StoryData, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: Eben/Defend/Parry
+    optionEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 2daedb3c6320277429d1453cffdc2006, type: 2}
+          m_TargetAssemblyTypeName: StoryIntConditionData, Assembly-CSharp
+          m_MethodName: ConditionalInvoke
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: Eben/Defend/Dodge
+    optionEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 02ba7d48a4037dc49a3accaa5e8059f5, type: 2}
+          m_TargetAssemblyTypeName: StoryController, Assembly-CSharp
+          m_MethodName: StartStory
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: bd354c57d6131ad47a312df1bf2e7dba, type: 2}
+            m_ObjectArgumentAssemblyTypeName: StoryData, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  nextStory: {fileID: 0}

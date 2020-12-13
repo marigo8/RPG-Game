@@ -236,6 +236,7 @@ MonoBehaviour:
   nameText: {fileID: 4638840412028836298}
   dialogueText: {fileID: 4638840412122279625}
   namePanel: {fileID: 4638840411592304135}
+  dialoguePanel: {fileID: 4638840411990542628}
   defaultColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &6055021202483691809
 MonoBehaviour:
@@ -274,19 +275,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 4638840410952847060}
           m_TargetAssemblyTypeName: StoryUIBehaviour, Assembly-CSharp
-          m_MethodName: DisplayDialogue
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 4638840410952847060}
-          m_TargetAssemblyTypeName: StoryUIBehaviour, Assembly-CSharp
-          m_MethodName: DisplayName
+          m_MethodName: DisplayLine
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

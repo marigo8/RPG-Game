@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe351893f7cb84044a33865e58546a9a, type: 3}
   m_Name: _StoryController
   m_EditorClassIdentifier: 
-  story: {fileID: 11400000, guid: 0b14ce242b6aa964daba3450df185f1e, type: 2}
-  lineIndex: 16
+  story: {fileID: 11400000, guid: fa2023147f3897c428b76058f998ce9d, type: 2}
+  lineIndex: 9
   startAction: {fileID: 11400000, guid: d6bf259e4b986bb44848ca34b65cf490, type: 2}
   lineAction: {fileID: 11400000, guid: a0f03f7c3b21d524ea340a6177b3dc7b, type: 2}
   optionsAction: {fileID: 11400000, guid: 8adb173b9304ae64f98bf9a35c45f9a9, type: 2}
@@ -21,3 +21,5 @@ MonoBehaviour:
   textTags:
   - name: key
     color: {r: 0, g: 0.75245667, b: 1, a: 1}
+  - name: intense
+    color: {r: 1, g: 0.24696925, b: 0, a: 1}

@@ -37,7 +37,7 @@ public class ActionEventsBehaviour : EventsBehaviour
 
     public List<ActionEventPair> actionEventPairs = new List<ActionEventPair>(1);
 
-    private void OnEnable()
+    private void Start()
     {
         foreach (var pair in actionEventPairs)
         {

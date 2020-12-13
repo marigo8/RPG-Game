@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Dynamic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -70,6 +71,8 @@ public class StoryController : ScriptableObject
 
         lineIndex = 0;
         
+        story.onStart.Invoke();
+        
         startAction.Raise();
         lineAction.Raise();
     }
@@ -87,7 +90,7 @@ public class StoryController : ScriptableObject
         {
             if (story.options.Count == 0)
             {
-                EndStory();
+                story.onEnd.Invoke();
                 return;
             }
             ParseOptionNames();
@@ -95,6 +98,7 @@ public class StoryController : ScriptableObject
         }
         else
         {
+            CurrentLine.lineData.lineEvent.Invoke();
             lineAction.Raise();
         }
     }
