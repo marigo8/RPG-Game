@@ -20,37 +20,51 @@ MonoBehaviour:
       but fails.
     character: {fileID: 0}
     lineData:
-      delay: 0
+      pauseStory: 0
       lineEvent:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 75dd625fddd930741855488abc7645fb, type: 2}
+            m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
+            m_MethodName: Raise
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
   - name: It seems as though Eben was not ready for his spin move.
     character: {fileID: 0}
     lineData:
-      delay: 0
+      pauseStory: 0
       lineEvent:
         m_PersistentCalls:
           m_Calls: []
   - name: Its a miracle he was able to see its beauty and live.
     character: {fileID: 0}
     lineData:
-      delay: 0
+      pauseStory: 0
       lineEvent:
         m_PersistentCalls:
           m_Calls: []
   - name: Did you like my <intense>SPIN MOVE</intense>?!
     character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
     lineData:
-      delay: 0
+      pauseStory: 0
       lineEvent:
         m_PersistentCalls:
           m_Calls: []
   - name: Are you in massive amounts of <intense>PAIN</intense>?!
     character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
     lineData:
-      delay: 0
+      pauseStory: 0
       lineEvent:
         m_PersistentCalls:
           m_Calls: []
   options: []
-  nextStory: {fileID: 0}
+  onEnd:
+    m_PersistentCalls:
+      m_Calls: []

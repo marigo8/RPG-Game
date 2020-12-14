@@ -19,35 +19,35 @@ MonoBehaviour:
   - name: You little punk!
     character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
     lineData:
-      delay: 0
+      pauseStory: 0
       lineEvent:
         m_PersistentCalls:
           m_Calls: []
   - name: You really think you can get away with a stunt like that?
     character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
     lineData:
-      delay: 0
+      pauseStory: 0
       lineEvent:
         m_PersistentCalls:
           m_Calls: []
   - name: You're going to pay for that.
     character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
     lineData:
-      delay: 0
+      pauseStory: 0
       lineEvent:
         m_PersistentCalls:
           m_Calls: []
   - name: I'll make you pay with massive amounts of pain!
     character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
     lineData:
-      delay: 0
+      pauseStory: 0
       lineEvent:
         m_PersistentCalls:
           m_Calls: []
   - name: Prepare yourself...
     character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
     lineData:
-      delay: 0
+      pauseStory: 0
       lineEvent:
         m_PersistentCalls:
           m_Calls: []
@@ -55,14 +55,14 @@ MonoBehaviour:
       YOU FEEL!</intense></size>
     character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
     lineData:
-      delay: 0
+      pauseStory: 0
       lineEvent:
         m_PersistentCalls:
           m_Calls: []
   - name: In fact, you should feel honored.
     character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
     lineData:
-      delay: 0
+      pauseStory: 0
       lineEvent:
         m_PersistentCalls:
           m_Calls: []
@@ -70,40 +70,53 @@ MonoBehaviour:
       lived!
     character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
     lineData:
-      delay: 0
+      pauseStory: 0
       lineEvent:
         m_PersistentCalls:
           m_Calls: []
   - name: Are you ready...?!
     character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
     lineData:
-      delay: 0
+      pauseStory: 0
       lineEvent:
         m_PersistentCalls:
           m_Calls: []
   - name: For my...
     character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
     lineData:
-      delay: 0
+      pauseStory: 0
       lineEvent:
         m_PersistentCalls:
           m_Calls: []
   - name: <size=64><intense>SPIN MOVE?!</intense></size>
     character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
     lineData:
-      delay: 0
+      pauseStory: 0
       lineEvent:
         m_PersistentCalls:
           m_Calls: []
   - name: The bandit charges up his spin move.
     character: {fileID: 0}
     lineData:
-      delay: 0
+      pauseStory: 0
       lineEvent:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 271c082678636d24fb784699333cd153, type: 2}
+            m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
+            m_MethodName: Raise
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
   options:
   - name: Eben/Attack/Broom
+    description: 
     optionEvent:
       m_PersistentCalls:
         m_Calls:
@@ -120,6 +133,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   - name: Eben/Defend/Parry
+    description: 
     optionEvent:
       m_PersistentCalls:
         m_Calls:
@@ -136,6 +150,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   - name: Eben/Defend/Dodge
+    description: 
     optionEvent:
       m_PersistentCalls:
         m_Calls:
@@ -151,4 +166,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  nextStory: {fileID: 0}
+  onEnd:
+    m_PersistentCalls:
+      m_Calls: []

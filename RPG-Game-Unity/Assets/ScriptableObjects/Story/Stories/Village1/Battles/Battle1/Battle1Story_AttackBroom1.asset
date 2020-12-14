@@ -19,31 +19,55 @@ MonoBehaviour:
   - name: Eben swings his broom at the bandit!
     character: {fileID: 0}
     lineData:
-      delay: 0
+      pauseStory: 0
       lineEvent:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 75dd625fddd930741855488abc7645fb, type: 2}
+            m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
+            m_MethodName: Raise
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
   - name: The bandit sees it coming because he's not a complete idiot.
     character: {fileID: 0}
     lineData:
-      delay: 0
+      pauseStory: 0
       lineEvent:
         m_PersistentCalls:
           m_Calls: []
   - name: Nice try, idio-
     character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
     lineData:
-      delay: 0
+      pauseStory: 0
       lineEvent:
         m_PersistentCalls:
           m_Calls: []
   - name: He doesn't see the second attack coming.
     character: {fileID: 0}
     lineData:
-      delay: 0
+      pauseStory: 0
       lineEvent:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 75dd625fddd930741855488abc7645fb, type: 2}
+            m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
+            m_MethodName: Raise
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
   options: []
   onEnd:
     m_PersistentCalls:

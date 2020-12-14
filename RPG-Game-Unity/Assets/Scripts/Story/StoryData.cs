@@ -26,6 +26,9 @@ public class StoryData : ScriptableObject
     public struct Option
     {
         public string name;
+        [TextArea()] 
+        public string description;
+        
         public UnityEvent optionEvent;
     }
 

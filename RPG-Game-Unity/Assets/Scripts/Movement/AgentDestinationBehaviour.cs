@@ -17,7 +17,7 @@ public class AgentDestinationBehaviour : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         agent.updatePosition = false;
-        agent.updateRotation = false;
+        //agent.updateRotation = false;
         agent.updateUpAxis = false;
 
         var position = transform.position + Vector3.down * agent.baseOffset;
@@ -47,6 +47,9 @@ public class AgentDestinationBehaviour : MonoBehaviour
     {
         onDestinationAction.Raise();
         onDestinationEvent.Invoke();
+
+        agent.stoppingDistance = 0;
+        onDestinationAction = null;
     }
 
     private IEnumerator MoveToDestination(Vector3 destination)
@@ -66,6 +69,7 @@ public class AgentDestinationBehaviour : MonoBehaviour
     private bool MoveAlongPath(NavMeshPath path)
     {
         agent.SamplePathPosition(agent.areaMask, agent.speed * Time.deltaTime, out var hit);
+        
         transform.position = hit.position + (Vector3.up * agent.baseOffset);
         return agent.remainingDistance > agent.stoppingDistance;
     }

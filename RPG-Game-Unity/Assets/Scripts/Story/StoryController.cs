@@ -74,6 +74,8 @@ public class StoryController : ScriptableObject
         story.onStart.Invoke();
         
         startAction.Raise();
+        
+        CurrentLine.lineData.lineEvent.Invoke();
         lineAction.Raise();
     }
 
