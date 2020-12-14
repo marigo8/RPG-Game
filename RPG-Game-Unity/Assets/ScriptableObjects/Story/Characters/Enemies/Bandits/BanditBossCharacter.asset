@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8a1118eb1ee7cd489fb96180645fb6d, type: 3}
   m_Name: BanditBossCharacter
   m_EditorClassIdentifier: 
-  characterName: Boss Bandit
-  color: {r: 0.735849, g: 0.08677464, b: 0.08677464, a: 1}
+  characterName: {fileID: 11400000, guid: 34348e00896f7784ba9660f2f3895c24, type: 2}
+  color: {fileID: 11400000, guid: 3992c8508b20bb940b26abc86bf9c4d7, type: 2}

@@ -15,20 +15,24 @@ MonoBehaviour:
   onStart:
     m_PersistentCalls:
       m_Calls: []
+  variables:
+  - {fileID: 11400000, guid: 7e0c0ea34d0d8a34e8ee32c84fa5a34e, type: 2}
   lines:
-  - name: Eben successfully dodges the spin move.
+  - name: '[0] successfully dodges the spin move.'
     character: {fileID: 0}
     lineData:
-      delay: 0
+      pauseStory: 0
       lineEvent:
         m_PersistentCalls:
           m_Calls: []
   - name: What?! How were you able to dodge my <intense>SPIN MOVE</intense>?!
     character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
     lineData:
-      delay: 0
+      pauseStory: 0
       lineEvent:
         m_PersistentCalls:
           m_Calls: []
   options: []
-  nextStory: {fileID: 0}
+  onEnd:
+    m_PersistentCalls:
+      m_Calls: []

@@ -27,6 +27,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  variables:
+  - {fileID: 11400000, guid: 7e0c0ea34d0d8a34e8ee32c84fa5a34e, type: 2}
   lines:
   - name: Hey you!
     character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
@@ -55,7 +57,8 @@ MonoBehaviour:
               m_BoolArgument: 0
             m_CallState: 2
   options:
-  - name: Eben/Item/Gold/Deceive
+  - name: '[0]/Item/Gold/Deceive'
+    description: 
     optionEvent:
       m_PersistentCalls:
         m_Calls:
@@ -71,7 +74,8 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - name: Eben/Attack/Broom
+  - name: '[0]/Attack/Broom'
+    description: 
     optionEvent:
       m_PersistentCalls:
         m_Calls:

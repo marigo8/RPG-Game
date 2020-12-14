@@ -9,8 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8a1118eb1ee7cd489fb96180645fb6d, type: 3}
-  m_Name: KenaCharacter
+  m_Script: {fileID: 11500000, guid: d3ef5ce12880dec42bc5675c5e708fba, type: 3}
+  m_Name: BanditBossString_Name
   m_EditorClassIdentifier: 
-  characterName: Kena
-  color: {r: 0.15107687, g: 0.4797813, b: 0.9150943, a: 1}
+  value: Boss

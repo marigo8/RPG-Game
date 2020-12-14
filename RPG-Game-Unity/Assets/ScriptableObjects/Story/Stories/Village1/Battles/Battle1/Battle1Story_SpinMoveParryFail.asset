@@ -15,20 +15,24 @@ MonoBehaviour:
   onStart:
     m_PersistentCalls:
       m_Calls: []
+  variables:
+  - {fileID: 11400000, guid: 7e0c0ea34d0d8a34e8ee32c84fa5a34e, type: 2}
   lines:
-  - name: Eben attempts to parry the spin move.
+  - name: '[0] attempts to parry the spin move.'
     character: {fileID: 0}
     lineData:
-      delay: 0
+      pauseStory: 0
       lineEvent:
         m_PersistentCalls:
           m_Calls: []
   - name: He fails!
     character: {fileID: 0}
     lineData:
-      delay: 0
+      pauseStory: 0
       lineEvent:
         m_PersistentCalls:
           m_Calls: []
   options: []
-  nextStory: {fileID: 0}
+  onEnd:
+    m_PersistentCalls:
+      m_Calls: []

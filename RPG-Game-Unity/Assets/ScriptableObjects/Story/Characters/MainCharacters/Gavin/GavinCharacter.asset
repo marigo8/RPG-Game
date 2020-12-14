@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8a1118eb1ee7cd489fb96180645fb6d, type: 3}
-  m_Name: Hunter1Character
+  m_Name: GavinCharacter
   m_EditorClassIdentifier: 
-  characterName: {fileID: 11400000, guid: 516bd22f51358844aada574b41ee3e41, type: 2}
-  color: {fileID: 0}
+  characterName: {fileID: 11400000, guid: 7e0c0ea34d0d8a34e8ee32c84fa5a34e, type: 2}
+  color: {fileID: 11400000, guid: 92129d4d08cd94d418819e9fd2a52132, type: 2}

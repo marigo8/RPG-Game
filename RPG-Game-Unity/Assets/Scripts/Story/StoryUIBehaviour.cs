@@ -44,11 +44,26 @@ public class StoryUIBehaviour : MonoBehaviour
         
         var dialogue = currentLine.name;
         var character = currentLine.character;
-        
+
+        dialogue = controller.ParseVariables(dialogue);
         dialogue = controller.ParseTags(dialogue);
         dialogueText.text = dialogue;
 
-        dialogueText.color = character != null ? character.color : defaultColor;
+        if (character != null)
+        {
+            if (character.color != null)
+            {
+                dialogueText.color = character.color.value;
+            }
+            else
+            {
+                dialogueText.color = defaultColor;
+            }
+        }
+        else
+        {
+            dialogueText.color = defaultColor;
+        }
     }
 
     private void DisplayName()
@@ -61,12 +76,10 @@ public class StoryUIBehaviour : MonoBehaviour
         }
         namePanel.SetActive(true);
         
-        var characterName = character.characterName;
-        
-        characterName = controller.ParseTags(characterName);
+        var characterName = character.characterName.value;
 
         nameText.text = characterName;
-        nameText.color = character.color;
+        nameText.color = character.color != null ? character.color.value : defaultColor;
     }
 
     private void Update()

@@ -15,9 +15,11 @@ MonoBehaviour:
   onStart:
     m_PersistentCalls:
       m_Calls: []
+  variables:
+  - {fileID: 11400000, guid: 7e0c0ea34d0d8a34e8ee32c84fa5a34e, type: 2}
   lines:
-  - name: Eben attempts to overpower the bandit's spin move with his trusty broom...
-      but fails.
+  - name: '[0] attempts to overpower the bandit''s spin move with his trusty broom...
+      but fails.'
     character: {fileID: 0}
     lineData:
       pauseStory: 0
@@ -36,7 +38,7 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
-  - name: It seems as though Eben was not ready for his spin move.
+  - name: It seems as though [0] was not ready for his spin move.
     character: {fileID: 0}
     lineData:
       pauseStory: 0

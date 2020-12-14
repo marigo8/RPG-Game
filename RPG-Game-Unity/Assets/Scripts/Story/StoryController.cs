@@ -109,7 +109,9 @@ public class StoryController : ScriptableObject
     {
         foreach (var optionHierarchy in story.options)
         {
-            var stringList = optionHierarchy.name.Split('/');
+            var fullString = optionHierarchy.name;
+            fullString = ParseVariables(fullString);
+            var stringList = fullString.Split('/');
 
             var parentOption = optionsRoot;
 
@@ -141,6 +143,17 @@ public class StoryController : ScriptableObject
         foreach (var tag in textTags)
         {
             text = tag.Replace(text);
+        }
+
+        return text;
+    }
+
+    public string ParseVariables(string text)
+    {
+        for (var i = 0; i < story.variables.Count; i++)
+        {
+            var variable = story.variables[i];
+            text = text.Replace($"[{i}]", variable.GetString());
         }
 
         return text;
