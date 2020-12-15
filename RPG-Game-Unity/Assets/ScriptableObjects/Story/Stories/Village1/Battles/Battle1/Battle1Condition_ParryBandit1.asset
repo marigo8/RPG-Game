@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccf613d012e75424bb3b707fcfca6fdd, type: 3}
+  m_Name: Battle1Condition_ParryBandit1
+  m_EditorClassIdentifier: 
+  dice: {fileID: 11400000, guid: 480a8be611d2101499aa9510cda06df0, type: 2}
+  par: {fileID: 11400000, guid: 89be4ae83fb176448af721476f20bab9, type: 2}

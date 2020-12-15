@@ -57,7 +57,7 @@ MonoBehaviour:
               m_BoolArgument: 0
             m_CallState: 2
   options:
-  - name: '[0]/Item/Gold/Deceive'
+  - name: '[0]/Deceive/Gold'
     description: 
     optionEvent:
       m_PersistentCalls:

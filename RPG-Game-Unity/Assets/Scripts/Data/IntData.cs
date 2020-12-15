@@ -9,6 +9,6 @@ public class IntData : ValueData
 
     public override string GetString()
     {
-        return "" + value;
+        return value.ToString();
     }
 }

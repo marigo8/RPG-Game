@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Values/Color")]
-public class ColorData : ValueData
+[CreateAssetMenu(menuName = "Values/Bool")]
+public class BoolData : ValueData
 {
-    public Color value = Color.white;
+    public bool value;
 
     public override string GetString()
     {

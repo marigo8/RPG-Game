@@ -79,6 +79,11 @@ public class StoryController : ScriptableObject
         lineAction.Raise();
     }
 
+    public void StartConditionalStory(ConditionalStoryData conditionalStoryData)
+    {
+        StartStory(conditionalStoryData.GetStory());
+    }
+
     public void EndStory()
     {
         story = null;

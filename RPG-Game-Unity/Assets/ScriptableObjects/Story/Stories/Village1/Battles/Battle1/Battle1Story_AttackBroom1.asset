@@ -37,7 +37,7 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
-  - name: The bandit sees it coming because he's not a complete idiot.
+  - name: The bandit sees it coming and blocks it because he's not a complete idiot.
     character: {fileID: 0}
     lineData:
       pauseStory: 0

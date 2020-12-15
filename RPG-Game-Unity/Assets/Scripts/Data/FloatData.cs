@@ -7,6 +7,6 @@ public class FloatData : ValueData
 
     public override string GetString()
     {
-        return "" + value;
+        return value.ToString("F1");
     }
 }
