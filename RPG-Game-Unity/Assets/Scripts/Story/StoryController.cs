@@ -24,12 +24,14 @@ public class StoryController : ScriptableObject
     public class Option
     {
         public string name;
+        public string description;
         public List<Option> subOptions = new List<Option>();
         public UnityEvent optionEvent;
 
-        public Option(string newName, Option parent)
+        public Option(string newName, string newDescription, Option parent)
         {
             name = newName;
+            description = newDescription;
             parent.subOptions.Add(this);
         }
 
@@ -125,7 +127,7 @@ public class StoryController : ScriptableObject
                 var existingOption = parentOption.GetSubOption(option);
                 if (existingOption == null)
                 {
-                    var newOption = new Option(option, parentOption);
+                    var newOption = new Option(option, ParseVariables(optionHierarchy.description), parentOption);
                     parentOption = newOption;
                 }
                 else

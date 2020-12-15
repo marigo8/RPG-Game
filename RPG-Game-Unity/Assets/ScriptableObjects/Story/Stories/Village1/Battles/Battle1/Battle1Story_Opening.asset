@@ -58,7 +58,7 @@ MonoBehaviour:
             m_CallState: 2
   options:
   - name: '[0]/Deceive/Gold'
-    description: 
+    description: Give the bandit what he wants (but actually don't)
     optionEvent:
       m_PersistentCalls:
         m_Calls:
@@ -75,7 +75,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   - name: '[0]/Attack/Broom'
-    description: 
+    description: Whack!
     optionEvent:
       m_PersistentCalls:
         m_Calls:

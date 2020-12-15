@@ -4,7 +4,9 @@ using UnityEngine.UI;
 
 public class OptionsUIBehaviour : MonoBehaviour
 {
-    public GameObject optionButtonPrefab, cancelButtonPrefab;
+    public GameObject optionButtonPrefab, cancelButtonPrefab, descriptionBox;
+
+    public Text descriptionText;
 
     public StoryController controller;
 
@@ -21,16 +23,45 @@ public class OptionsUIBehaviour : MonoBehaviour
         }
     }
 
+    public void ShowDescription(string description)
+    {
+        descriptionBox.SetActive(true);
+        descriptionText.text = description;
+    }
+
+    public void HideDescription()
+    {
+        descriptionText.text = "";
+        descriptionBox.SetActive(false);
+    }
+
     public void DisplaySubOptions(StoryController.Option option)
     {
         ClearOptions();
         foreach (var subOption in option.subOptions)
         {
-            var button = Instantiate(optionButtonPrefab, transform).GetComponent<Button>();
+            var optionObj = Instantiate(optionButtonPrefab, transform);
+            var button = optionObj.GetComponent<Button>();
             button.GetComponentInChildren<Text>().text = subOption.name;
             if (subOption.subOptions.Count == 0)
             {
                 button.onClick.AddListener(subOption.optionEvent.Invoke);
+                Debug.Log(subOption.description);
+                if (subOption.description != "")
+                {
+                    Debug.Log("ACK");
+                    var eventTrigger = optionObj.GetComponent<EventTrigger>();
+                    
+                    var pointerEnter = new EventTrigger.Entry();
+                    pointerEnter.eventID = EventTriggerType.PointerEnter;
+                    pointerEnter.callback.AddListener(delegate { ShowDescription(subOption.description); });
+                    eventTrigger.triggers.Add(pointerEnter);
+                    
+                    var pointerExit = new EventTrigger.Entry();
+                    pointerExit.eventID = EventTriggerType.PointerExit;
+                    pointerExit.callback.AddListener(delegate { HideDescription(); });
+                    eventTrigger.triggers.Add(pointerExit);
+                }
             }
             else
             {

@@ -18,6 +18,7 @@ MonoBehaviour:
   variables:
   - {fileID: 11400000, guid: 7e0c0ea34d0d8a34e8ee32c84fa5a34e, type: 2}
   - {fileID: 11400000, guid: 96268c025bad5ee42a8f2240e460bdbe, type: 2}
+  - {fileID: 11400000, guid: 65843748f21615b4584606881ea4f939, type: 2}
   lines:
   - name: You little punk!
     character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
@@ -119,7 +120,7 @@ MonoBehaviour:
             m_CallState: 2
   options:
   - name: '[0]/Attack/Broom'
-    description: 
+    description: Whack!
     optionEvent:
       m_PersistentCalls:
         m_Calls:
@@ -135,8 +136,8 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - name: '[0]/Defend/Parry ([1])'
-    description: 
+  - name: '[0]/Defend/Parry'
+    description: '[1] chance of success. Deals [2] damage if successful.'
     optionEvent:
       m_PersistentCalls:
         m_Calls:
@@ -152,8 +153,8 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - name: '[0]/Defend/Dodge (100%)'
-    description: 
+  - name: '[0]/Defend/Dodge'
+    description: 100% chance of success.
     optionEvent:
       m_PersistentCalls:
         m_Calls:
