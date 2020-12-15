@@ -120,7 +120,7 @@ MonoBehaviour:
             m_CallState: 2
   options:
   - name: '[0]/Attack/Broom'
-    description: Whack!
+    description: Whack! Deals [2] damage
     optionEvent:
       m_PersistentCalls:
         m_Calls:

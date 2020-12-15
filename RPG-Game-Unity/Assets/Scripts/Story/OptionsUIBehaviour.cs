@@ -46,10 +46,8 @@ public class OptionsUIBehaviour : MonoBehaviour
             if (subOption.subOptions.Count == 0)
             {
                 button.onClick.AddListener(subOption.optionEvent.Invoke);
-                Debug.Log(subOption.description);
                 if (subOption.description != "")
                 {
-                    Debug.Log("ACK");
                     var eventTrigger = optionObj.GetComponent<EventTrigger>();
                     
                     var pointerEnter = new EventTrigger.Entry();
