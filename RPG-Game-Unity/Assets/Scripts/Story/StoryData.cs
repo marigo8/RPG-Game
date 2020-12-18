@@ -34,7 +34,7 @@ public class StoryData : ScriptableObject
 
     public UnityEvent onStart;
 
-    public List<ValueData> variables;
+    public VariableData variableData;
 
     public List<Line> lines;
 

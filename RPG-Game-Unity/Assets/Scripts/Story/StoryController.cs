@@ -157,10 +157,9 @@ public class StoryController : ScriptableObject
 
     public string ParseVariables(string text)
     {
-        for (var i = 0; i < story.variables.Count; i++)
+        foreach (var variable in story.variableData.variables)
         {
-            var variable = story.variables[i];
-            text = text.Replace($"[{i}]", variable.GetString());
+            text = text.Replace($"[{variable.name}]", variable.value.GetString());
         }
 
         return text;

@@ -15,8 +15,7 @@ MonoBehaviour:
   onStart:
     m_PersistentCalls:
       m_Calls: []
-  variables:
-  - {fileID: 11400000, guid: 7e0c0ea34d0d8a34e8ee32c84fa5a34e, type: 2}
+  variableData: {fileID: 11400000, guid: 020e51dc3c9d9284ca1dee63891262c8, type: 2}
   lines:
   - name: Here's all the gold that I have dude.
     character: {fileID: 11400000, guid: 0982b16950084d6498d1185631088991, type: 2}
@@ -32,7 +31,7 @@ MonoBehaviour:
       lineEvent:
         m_PersistentCalls:
           m_Calls: []
-  - name: '[0] attacks the bandit with his broom!'
+  - name: '[Player1] attacks the bandit with his broom!'
     character: {fileID: 0}
     lineData:
       pauseStory: 0

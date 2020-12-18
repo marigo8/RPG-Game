@@ -15,10 +15,9 @@ MonoBehaviour:
   onStart:
     m_PersistentCalls:
       m_Calls: []
-  variables:
-  - {fileID: 11400000, guid: 7e0c0ea34d0d8a34e8ee32c84fa5a34e, type: 2}
+  variableData: {fileID: 11400000, guid: 020e51dc3c9d9284ca1dee63891262c8, type: 2}
   lines:
-  - name: '[0] attempts to parry the spin move.'
+  - name: '[Player1] attempts to parry the spin move.'
     character: {fileID: 0}
     lineData:
       pauseStory: 0

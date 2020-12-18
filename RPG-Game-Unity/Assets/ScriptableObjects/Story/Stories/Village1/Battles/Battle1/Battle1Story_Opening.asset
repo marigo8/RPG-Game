@@ -27,9 +27,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  variables:
-  - {fileID: 11400000, guid: 7e0c0ea34d0d8a34e8ee32c84fa5a34e, type: 2}
-  - {fileID: 11400000, guid: 65843748f21615b4584606881ea4f939, type: 2}
+  variableData: {fileID: 11400000, guid: 020e51dc3c9d9284ca1dee63891262c8, type: 2}
   lines:
   - name: Hey you!
     character: {fileID: 11400000, guid: 7377061ed694c1249815e9656c415f57, type: 2}
@@ -58,7 +56,7 @@ MonoBehaviour:
               m_BoolArgument: 0
             m_CallState: 2
   options:
-  - name: '[0]/Deceive/Gold'
+  - name: '[Player1]/Deceive/Gold'
     description: Give the bandit what he wants (but actually don't)
     optionEvent:
       m_PersistentCalls:
@@ -75,8 +73,8 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - name: '[0]/Attack/Broom'
-    description: Whack! Deals [1] damage
+  - name: '[Player1]/Attack/Broom'
+    description: Whack! Deals [BroomDamage] damage
     optionEvent:
       m_PersistentCalls:
         m_Calls:
