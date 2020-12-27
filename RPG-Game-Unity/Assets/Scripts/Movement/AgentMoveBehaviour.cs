@@ -6,11 +6,13 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshObstacle))]
 public class AgentMoveBehaviour : MonoBehaviour
 {
+    public Transform debugObj;
+    
     private NavMeshAgent agent;
     private NavMeshObstacle obstacle;
     private NavMeshPath path;
 
-    public Transform debugObj;
+    private bool moving;
 
     private void Start()
     {
@@ -30,6 +32,10 @@ public class AgentMoveBehaviour : MonoBehaviour
 
     private IEnumerator Move(Vector3 destination)
     {
+        // Already Moving?
+        if (moving) yield break;
+        moving = true;
+        
         // Prepare for Path Calculation
         obstacle.enabled = false; // obstacle carves the navmesh, so it needs to be disabled before calculating the path
         yield return new WaitUntil(() => true); // wait one frame so that the navmesh can update.
@@ -45,8 +51,9 @@ public class AgentMoveBehaviour : MonoBehaviour
             yield return new WaitWhile(() => MoveToCorner(corner));
         }
         
-        // Re-enable the obstacle
+        // Finish
         obstacle.enabled = true;
+        moving = false;
     }
 
     private bool MoveToCorner(Vector3 corner)
