@@ -6,7 +6,7 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshObstacle))]
 public class AgentMoveBehaviour : MonoBehaviour
 {
-    public Transform debugObj;
+    public GameAction moveStartAction, moveEndAction;
     
     private NavMeshAgent agent;
     private NavMeshObstacle obstacle;
@@ -21,8 +21,11 @@ public class AgentMoveBehaviour : MonoBehaviour
         obstacle = GetComponent<NavMeshObstacle>();
         
         path = new NavMeshPath();
-        
-        MoveToDestination(debugObj);
+    }
+
+    public void MoveToDestination(Vector3 destination)
+    {
+        StartCoroutine(Move(destination));
     }
 
     public void MoveToDestination(Transform destinationObj)
@@ -37,6 +40,8 @@ public class AgentMoveBehaviour : MonoBehaviour
         moving = true;
         
         // Prepare for Path Calculation
+        moveStartAction.Raise();
+        
         obstacle.enabled = false; // obstacle carves the navmesh, so it needs to be disabled before calculating the path
         yield return new WaitUntil(() => true); // wait one frame so that the navmesh can update.
         
@@ -53,22 +58,28 @@ public class AgentMoveBehaviour : MonoBehaviour
         
         // Finish
         obstacle.enabled = true;
+        moveEndAction.Raise();
         moving = false;
     }
 
     private bool MoveToCorner(Vector3 corner)
     {
+        // Get a point between the agent and the corner
         var between = Vector3.MoveTowards(transform.position, corner, agent.speed*Time.deltaTime);
         
+        // Stop if arrived at corner
         if (Vector3.Distance(corner, between) <= 0) return false;
 
+        // Snap to Nav Mesh
         if (NavMesh.SamplePosition(between, out var hit, 10f, agent.areaMask))
         {
             between = hit.position;
         }
-
+        
+        // Apply Movement
         transform.position = between;
 
+        // Continue Loop
         return true;
     }
     
