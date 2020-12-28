@@ -7,12 +7,25 @@ using UnityEngine.AI;
 public class AgentMoveBehaviour : MonoBehaviour
 {
     public GameAction moveStartAction, moveEndAction;
+    public FloatData maxMoveDistance;
     
     private NavMeshAgent agent;
-    private NavMeshObstacle obstacle;
-    private NavMeshPath path;
+    public NavMeshObstacle obstacle;
+    private NavMeshPath path, previewPath;
 
     private bool moving;
+
+    public bool CanMoveTo(Vector3 destination)
+    {
+        if (!NavMesh.CalculatePath(transform.position, destination, agent.areaMask, previewPath)) return false;
+        if (previewPath.status != NavMeshPathStatus.PathComplete) return false;
+        var distance = 0f;
+        for (var i = 0; i < previewPath.corners.Length-1; i++)
+        {
+            distance += Vector3.Distance(previewPath.corners[i], previewPath.corners[i + 1]);
+        }
+        return distance < maxMoveDistance.value+.5f;
+    }
 
     private void Start()
     {
@@ -21,6 +34,7 @@ public class AgentMoveBehaviour : MonoBehaviour
         obstacle = GetComponent<NavMeshObstacle>();
         
         path = new NavMeshPath();
+        previewPath = new NavMeshPath();
     }
 
     public void MoveToDestination(Vector3 destination)

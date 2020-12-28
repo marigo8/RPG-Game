@@ -44,6 +44,7 @@ public class StateBehaviour : MonoBehaviour
 
     private void Start()
     {
+        currentIdContainer.SetToDefault();
         currentState = defaultState;
         ChangeState();
     }

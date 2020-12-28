@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3081599165532876968}
   - component: {fileID: 3081599165532876971}
   - component: {fileID: 3081599165532876970}
-  - component: {fileID: 3081599165532876969}
   m_Layer: 19
   m_Name: Cube
   m_TagString: Untagged
@@ -82,19 +81,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &3081599165532876969
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3081599165532876975}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3081599166764953501
 GameObject:
   m_ObjectHideFlags: 0
@@ -108,6 +94,8 @@ GameObject:
   - component: {fileID: 3081599166764953493}
   - component: {fileID: 3081599166764953502}
   - component: {fileID: 3081599166764953496}
+  - component: {fileID: 4547253050179781228}
+  - component: {fileID: 7962189247392144202}
   m_Layer: 19
   m_Name: Agent
   m_TagString: Untagged
@@ -182,6 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveStartAction: {fileID: 11400000, guid: f4dfa3ddea67334418f96517842e73e1, type: 2}
   moveEndAction: {fileID: 11400000, guid: e00e163818f9ce9478b9c82e108ae056, type: 2}
+  maxMoveDistance: {fileID: 0}
 --- !u!114 &3081599166764953496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,7 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actionEventPairs:
-  - name: Any Agent Starts Moving
+  - name: Enable Obstacles
     action: {fileID: 11400000, guid: f4dfa3ddea67334418f96517842e73e1, type: 2}
     actionEvent:
       m_PersistentCalls:
@@ -212,7 +201,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-  - name: Any Agent Stops Moving
+  - name: Disable Obstacles
     action: {fileID: 11400000, guid: e00e163818f9ce9478b9c82e108ae056, type: 2}
     actionEvent:
       m_PersistentCalls:
@@ -229,3 +218,34 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!143 &4547253050179781228
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3081599166764953501}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 0.5
+  m_Radius: 0.25
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.4, z: 0}
+--- !u!114 &7962189247392144202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3081599166764953501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca258f69286a0cd4aa19562c0e520a73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitName: {fileID: 0}
