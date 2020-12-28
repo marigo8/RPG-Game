@@ -1,10 +1,13 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(NavMeshAgent))]
 public class PlayerMoveBehaviour : MonoBehaviour
 {
     public FloatData moveSpeed, runSpeed, camRotateSpeed;
+
+    public UnityEvent movingEvent, stoppedEvent;
     
     private NavMeshAgent agent;
     private Vector3 movement;
@@ -21,6 +24,15 @@ public class PlayerMoveBehaviour : MonoBehaviour
         var vInput = Input.GetAxis("Vertical");
         movement.Set(hInput, 0, vInput);
         movement = Vector3.ClampMagnitude(movement, 1f);
+
+        if (movement.sqrMagnitude > 0.05f)
+        {
+            movingEvent.Invoke();
+        }
+        else
+        {
+            stoppedEvent.Invoke();
+        }
         
         // Factor Rotation
         movement = transform.TransformDirection(movement);

@@ -1,18 +1,7 @@
-﻿using UnityEngine;
-using UnityEngine.AI;
+﻿using System;
+using UnityEngine;
 
-[RequireComponent(typeof(NavMeshAgent))]
-public class CursorMoveBehaviour : MonoBehaviour
+[RequireComponent(typeof(SnapToGridBehaviour))]
+public class CursorMoveBehaviour : PlayerMoveBehaviour
 {
-    private NavMeshAgent agent;
-
-    private void Start()
-    {
-        agent = GetComponent<NavMeshAgent>();
-    }
-
-    private void Update()
-    {
-        
-    }
 }
