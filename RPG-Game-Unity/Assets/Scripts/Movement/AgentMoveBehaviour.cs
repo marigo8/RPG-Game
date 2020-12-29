@@ -2,18 +2,20 @@
 using UnityEngine;
 using UnityEngine.AI;
 
+[RequireComponent(typeof(BattleUnitBehaviour))]
 [RequireComponent(typeof(NavMeshAgent))]
 [RequireComponent(typeof(NavMeshObstacle))]
 public class AgentMoveBehaviour : MonoBehaviour
 {
     public GameAction moveStartAction, moveEndAction;
-    public FloatData maxMoveDistance;
-    
+
     private NavMeshAgent agent;
     public NavMeshObstacle obstacle;
     private NavMeshPath path, previewPath;
+    private BattleUnitBehaviour unit;
 
     private bool moving;
+    private float maxMoveDistance;
 
     public bool CanMoveTo(Vector3 destination)
     {
@@ -24,17 +26,20 @@ public class AgentMoveBehaviour : MonoBehaviour
         {
             distance += Vector3.Distance(previewPath.corners[i], previewPath.corners[i + 1]);
         }
-        return distance < maxMoveDistance.value+.5f;
+        return distance < maxMoveDistance+.5f;
     }
 
     private void Start()
     {
+        unit = GetComponent<BattleUnitBehaviour>();
         agent = GetComponent<NavMeshAgent>();
         agent.enabled = false;
         obstacle = GetComponent<NavMeshObstacle>();
         
         path = new NavMeshPath();
         previewPath = new NavMeshPath();
+
+        maxMoveDistance = unit.character.maxMoveDistance.value;
     }
 
     public void MoveToDestination(Vector3 destination)

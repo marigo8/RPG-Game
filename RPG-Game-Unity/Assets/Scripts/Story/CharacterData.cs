@@ -7,4 +7,8 @@ public class CharacterData : ScriptableObject
 {
     public StringData characterName;
     public ColorData color;
+
+    public IntData baseHealth;
+    public FloatData maxMoveDistance;
+    public ElementalData elementalModifiers;
 }

@@ -170,7 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveStartAction: {fileID: 11400000, guid: f4dfa3ddea67334418f96517842e73e1, type: 2}
   moveEndAction: {fileID: 11400000, guid: e00e163818f9ce9478b9c82e108ae056, type: 2}
-  maxMoveDistance: {fileID: 0}
+  obstacle: {fileID: 0}
 --- !u!114 &3081599166764953496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,7 +229,7 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 0.5
+  m_Height: 0.8
   m_Radius: 0.25
   m_SlopeLimit: 45
   m_StepOffset: 0.3
@@ -248,4 +248,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca258f69286a0cd4aa19562c0e520a73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitName: {fileID: 0}
+  character: {fileID: 0}
+  health: 0

@@ -14,3 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: {fileID: 11400000, guid: 7e0c0ea34d0d8a34e8ee32c84fa5a34e, type: 2}
   color: {fileID: 11400000, guid: 92129d4d08cd94d418819e9fd2a52132, type: 2}
+  baseHealth: {fileID: 11400000, guid: e47e9bc05b433f04c93b24021044b7d8, type: 2}
+  maxMoveDistance: {fileID: 11400000, guid: 5aa241da6168236488ef9515998df52a, type: 2}
+  elementalModifiers: {fileID: 11400000, guid: c9acbeb5e5d422044919929826640396, type: 2}
