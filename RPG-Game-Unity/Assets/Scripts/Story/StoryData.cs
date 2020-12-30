@@ -22,23 +22,13 @@ public class StoryData : ScriptableObject
         public UnityEvent lineEvent;
     }
 
-    [System.Serializable]
-    public struct Option
-    {
-        public string name;
-        [TextArea()] 
-        public string description;
-        
-        public UnityEvent optionEvent;
-    }
-
     public UnityEvent onStart;
 
     public VariableData variableData;
 
     public List<Line> lines;
 
-    public List<Option> options;
+    public OptionsData optionsData;
 
     public UnityEvent onEnd;
 }

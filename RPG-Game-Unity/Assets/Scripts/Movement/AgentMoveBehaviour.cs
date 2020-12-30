@@ -26,7 +26,7 @@ public class AgentMoveBehaviour : MonoBehaviour
         {
             distance += Vector3.Distance(previewPath.corners[i], previewPath.corners[i + 1]);
         }
-        return distance < maxMoveDistance+.5f;
+        return distance < maxMoveDistance+.25f;
     }
 
     private void Start()

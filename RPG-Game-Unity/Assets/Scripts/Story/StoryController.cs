@@ -97,7 +97,7 @@ public class StoryController : ScriptableObject
         lineIndex++;
         if (lineIndex >= story.lines.Capacity)
         {
-            if (story.options.Count == 0)
+            if (story.optionsData.options.Count == 0)
             {
                 story.onEnd.Invoke();
                 return;
@@ -114,7 +114,7 @@ public class StoryController : ScriptableObject
 
     public void ParseOptionNames()
     {
-        foreach (var optionHierarchy in story.options)
+        foreach (var optionHierarchy in story.optionsData.options)
         {
             var fullString = optionHierarchy.name;
             fullString = ParseVariables(fullString);
