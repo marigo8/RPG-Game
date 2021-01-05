@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 [CreateAssetMenu(menuName = "Battle/Move Set")]
 public class MoveSetData : ScriptableObject
@@ -8,8 +9,8 @@ public class MoveSetData : ScriptableObject
     {
         public string name;
         public GameObject prefab;
-        public int coolDownTime;
-
-        private int coolDownProgress;
+        public int staminaCost;
     }
+
+    public List<Move> attacks;
 }

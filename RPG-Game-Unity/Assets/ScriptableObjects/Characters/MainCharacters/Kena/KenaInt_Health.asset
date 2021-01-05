@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbab1c88439bd9947bcc831820552a84, type: 3}
   m_Name: KenaInt_Health
   m_EditorClassIdentifier: 
-  value: 25
+  value: 100

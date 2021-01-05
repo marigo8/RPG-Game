@@ -4,7 +4,7 @@
 public class BattleUnitBehaviour : MonoBehaviour
 {
     public CharacterData character;
-    public PrefabListData attacks;
+    public MoveSetData attacks;
 
     public int health;
     
