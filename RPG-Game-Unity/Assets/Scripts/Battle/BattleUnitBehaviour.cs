@@ -4,14 +4,15 @@
 public class BattleUnitBehaviour : MonoBehaviour
 {
     public CharacterData character;
+    public PrefabListData attacks;
 
     public int health;
     
     private AgentMoveBehaviour agentMove;
 
-    public void TakeDamage(DamageBehaviour damage)
+    public void TakeDamage(AttackData damage)
     {
-        health -= damage.baseDamage.value;
+        health -= damage.baseDamage;
     }
 
     private void Start()

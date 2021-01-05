@@ -40,6 +40,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7708525904523754812}
     m_Modifications:
+    - target: {fileID: 1313747673009424559, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: c6f484346361b1446aef9febc2d46dda, type: 2}
     - target: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -102,6 +106,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7708525904523754812}
     m_Modifications:
+    - target: {fileID: 1313747673009424559, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: d5f64ab8160467d4f8bbe8bef021d30d, type: 2}
+    - target: {fileID: 8325667364027669842, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325667364027669842, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: a0efa2127fa75094bacaa364e98d06e9, type: 2}
+    - target: {fileID: 8325667364027669842, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateUnitHealth
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325667364027669842, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AttackData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325667364027669842, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -164,6 +192,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7708525904523754812}
     m_Modifications:
+    - target: {fileID: 1313747673009424559, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: c6f484346361b1446aef9febc2d46dda, type: 2}
     - target: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
       propertyPath: m_RootOrder
       value: 1

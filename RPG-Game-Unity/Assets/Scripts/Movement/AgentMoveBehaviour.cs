@@ -39,7 +39,7 @@ public class AgentMoveBehaviour : MonoBehaviour
         path = new NavMeshPath();
         previewPath = new NavMeshPath();
 
-        maxMoveDistance = unit.character.maxMoveDistance.value;
+        maxMoveDistance = unit.character.maxMoveDistance;
     }
 
     public void MoveToDestination(Vector3 destination)

@@ -1,11 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+[CreateAssetMenu(menuName = "Battle/Attack")]
 public class AttackData : ScriptableObject
 {
-    public string attackName;
-    public GameObject prefab;
-    public int turnCooldown;
-    public int magicCost;
+    public AttackTypeID type;
+    public int baseDamage;
+    [Range(0f,1f)]
+    public float hitChance;
 }
