@@ -2,7 +2,7 @@
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class OptionsUIBehaviour : MonoBehaviour
+public class StoryOptionsUIBehaviour : MonoBehaviour
 {
     public GameObject optionButtonPrefab, cancelButtonPrefab, descriptionBox;
 

@@ -1,154 +1,16 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3600583607612180446
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7708525904523754812}
-  m_Layer: 0
-  m_Name: Sword Slash Double
-  m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7708525904523754812
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3600583607612180446}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 3058434758648091267}
-  - {fileID: 5806683747657013879}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &2530963897214551850
+--- !u!1001 &5799846568682295222
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 7708525904523754812}
-    m_Modifications:
-    - target: {fileID: 1313747673009424559, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
-      propertyPath: data
-      value: 
-      objectReference: {fileID: 11400000, guid: d5f64ab8160467d4f8bbe8bef021d30d, type: 2}
-    - target: {fileID: 8325667364027669842, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
-      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8325667364027669842, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
-      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 11400000, guid: a0efa2127fa75094bacaa364e98d06e9, type: 2}
-    - target: {fileID: 8325667364027669842, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
-      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: UpdateUnitHealth
-      objectReference: {fileID: 0}
-    - target: {fileID: 8325667364027669842, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
-      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: AttackData, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 8325667364027669842, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
-      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8325667364027669854, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
-      propertyPath: m_Name
-      value: Damage Sphere Mid
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
---- !u!4 &5806683747657013879 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
-  m_PrefabInstance: {fileID: 2530963897214551850}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &6483785358596362206
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 7708525904523754812}
+    m_TransformParent: {fileID: 3182697025538267700}
     m_Modifications:
     - target: {fileID: 1313747673009424559, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
       propertyPath: data
       value: 
       objectReference: {fileID: 11400000, guid: c6f484346361b1446aef9febc2d46dda, type: 2}
-    - target: {fileID: 8325667364027669842, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
-      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8325667364027669842, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
-      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 11400000, guid: a0efa2127fa75094bacaa364e98d06e9, type: 2}
-    - target: {fileID: 8325667364027669842, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
-      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: UpdateUnitHealth
-      objectReference: {fileID: 0}
-    - target: {fileID: 8325667364027669842, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
-      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: AttackData, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 8325667364027669842, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
-      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -195,12 +57,130 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8325667364027669854, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
       propertyPath: m_Name
-      value: Damage Sphere Low
+      value: Damage Sphere
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
---- !u!4 &3058434758648091267 stripped
+--- !u!1001 &7567340340633154918
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 589097493458112761, guid: 0989e40d4b1dfec40b5eb181a37a3fef, type: 3}
+      propertyPath: m_Name
+      value: Sword Slash Double
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985381327156719442, guid: 0989e40d4b1dfec40b5eb181a37a3fef, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985381327156719442, guid: 0989e40d4b1dfec40b5eb181a37a3fef, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985381327156719442, guid: 0989e40d4b1dfec40b5eb181a37a3fef, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985381327156719442, guid: 0989e40d4b1dfec40b5eb181a37a3fef, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985381327156719442, guid: 0989e40d4b1dfec40b5eb181a37a3fef, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985381327156719442, guid: 0989e40d4b1dfec40b5eb181a37a3fef, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985381327156719442, guid: 0989e40d4b1dfec40b5eb181a37a3fef, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985381327156719442, guid: 0989e40d4b1dfec40b5eb181a37a3fef, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985381327156719442, guid: 0989e40d4b1dfec40b5eb181a37a3fef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985381327156719442, guid: 0989e40d4b1dfec40b5eb181a37a3fef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985381327156719442, guid: 0989e40d4b1dfec40b5eb181a37a3fef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0989e40d4b1dfec40b5eb181a37a3fef, type: 3}
+--- !u!4 &3182697025538267700 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
-  m_PrefabInstance: {fileID: 6483785358596362206}
+  m_CorrespondingSourceObject: {fileID: 4985381327156719442, guid: 0989e40d4b1dfec40b5eb181a37a3fef, type: 3}
+  m_PrefabInstance: {fileID: 7567340340633154918}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9090827374987533369
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3182697025538267700}
+    m_Modifications:
+    - target: {fileID: 1313747673009424559, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: a0efa2127fa75094bacaa364e98d06e9, type: 2}
+    - target: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325667364027669854, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+      propertyPath: m_Name
+      value: Damage Sphere (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}

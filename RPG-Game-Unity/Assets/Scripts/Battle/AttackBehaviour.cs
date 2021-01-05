@@ -4,18 +4,16 @@ using UnityEngine.Events;
 public class AttackBehaviour : MonoBehaviour
 {
     public AttackData data;
-    public bool activate;
 
     public UnityEvent<BattleUnitBehaviour> activateEvent;
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (!activate) return;
+        Debug.Log($"{name} activated on frame {Time.frameCount}!");
         
         var unit = other.GetComponent<BattleUnitBehaviour>();
         if (unit == null) return;
         
-        activate = false;
         activateEvent.Invoke(unit);
     }
 
