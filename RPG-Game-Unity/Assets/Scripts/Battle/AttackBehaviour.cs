@@ -1,9 +1,18 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 
+[System.Serializable]
+public class DamageData
+{
+    public AttackTypeID type;
+    public int baseDamage;
+    [Range(0f, 1f)] public float hitChance;
+}
+
 public class AttackBehaviour : MonoBehaviour
 {
-    public AttackData data;
+
+    public DamageData data;
 
     public UnityEvent<BattleUnitBehaviour> activateEvent;
 

@@ -73,10 +73,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6929793822452645493}
     m_Modifications:
+    - target: {fileID: 1235354986313185464, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+      propertyPath: data.hitChance
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1235354986313185464, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+      propertyPath: data.baseDamage
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 1313747673009424559, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
       propertyPath: data
       value: 
-      objectReference: {fileID: 11400000, guid: c6f484346361b1446aef9febc2d46dda, type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 1313747673009424559, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+      propertyPath: data.type
+      value: 
+      objectReference: {fileID: 11400000, guid: c407259e1984b8546a4a52bfab3d6f4d, type: 2}
     - target: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -134,10 +146,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6929793822452645493}
     m_Modifications:
+    - target: {fileID: 1235354986313185464, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+      propertyPath: data.hitChance
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1235354986313185464, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+      propertyPath: data.baseDamage
+      value: 37
+      objectReference: {fileID: 0}
     - target: {fileID: 1313747673009424559, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
       propertyPath: data
       value: 
-      objectReference: {fileID: 11400000, guid: d5f64ab8160467d4f8bbe8bef021d30d, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -195,10 +215,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6929793822452645493}
     m_Modifications:
+    - target: {fileID: 1235354986313185464, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+      propertyPath: data.hitChance
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1235354986313185464, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+      propertyPath: data.baseDamage
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 1313747673009424559, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
       propertyPath: data
       value: 
-      objectReference: {fileID: 11400000, guid: c6f484346361b1446aef9febc2d46dda, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
       propertyPath: m_RootOrder
       value: 2

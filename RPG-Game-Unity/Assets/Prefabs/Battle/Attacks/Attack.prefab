@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4985381327156719442}
   - component: {fileID: -1182478548173817296}
+  - component: {fileID: 529731724294606174}
   m_Layer: 0
   m_Name: Attack
   m_TagString: Untagged
@@ -50,3 +51,33 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &529731724294606174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589097493458112761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c9710f7836465441b139ce9a7a6c044, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionEventPairs:
+  - name: Attack End
+    action: {fileID: 11400000, guid: 23ad24ca11627934b80b7e9c8191a17d, type: 2}
+    actionEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 529731724294606174}
+          m_TargetAssemblyTypeName: EventsBehaviour, Assembly-CSharp
+          m_MethodName: DestroyObject
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 589097493458112761}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2

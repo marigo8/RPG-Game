@@ -10,7 +10,7 @@ public class BattleUnitBehaviour : MonoBehaviour
     
     private AgentMoveBehaviour agentMove;
 
-    public void TakeDamage(AttackData damage)
+    public void TakeDamage(DamageData damage)
     {
         health -= damage.baseDamage;
     }

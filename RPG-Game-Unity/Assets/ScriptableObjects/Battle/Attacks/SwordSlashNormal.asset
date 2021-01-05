@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e292077a853ce22459232056a6e4c40c, type: 3}
-  m_Name: SwordAttackHigh
+  m_Name: SwordSlashNormal
   m_EditorClassIdentifier: 
-  baseDamage: 50
-  hitChance: 0.9
-  type: {fileID: 11400000, guid: c407259e1984b8546a4a52bfab3d6f4d, type: 2}
+  attackName: Sword Slash
+  prefab: {fileID: 7710294948747793646, guid: 467de1046ea8a4d45a2222d301922e66, type: 3}
+  staminaCost: 0

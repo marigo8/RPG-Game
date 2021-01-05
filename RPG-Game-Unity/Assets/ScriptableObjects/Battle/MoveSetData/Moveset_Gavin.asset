@@ -13,12 +13,6 @@ MonoBehaviour:
   m_Name: Moveset_Gavin
   m_EditorClassIdentifier: 
   attacks:
-  - name: Slash
-    prefab: {fileID: 3600583607612180446, guid: d85810747815d5b42a5582dfd06e8a49, type: 3}
-    staminaCost: 0
-  - name: Wide Slash
-    prefab: {fileID: 3600583607612180446, guid: 1acc172c06107404f83eb59e1c0372f2, type: 3}
-    staminaCost: 2
-  - name: Double Slash
-    prefab: {fileID: 3600583607612180446, guid: b974ec241abf48246b4abba69e2f25c6, type: 3}
-    staminaCost: 1
+  - {fileID: 11400000, guid: 1abfcfc1f0416de41afa990a758bae96, type: 2}
+  - {fileID: 11400000, guid: 351fe1a2ce6ad33489f016fe914257b6, type: 2}
+  - {fileID: 11400000, guid: 7d3c51d45e1281c4d830fcce33ca2f6e, type: 2}

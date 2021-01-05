@@ -3,8 +3,7 @@
 [CreateAssetMenu(menuName = "Battle/Attack")]
 public class AttackData : ScriptableObject
 {
-    public AttackTypeID type;
-    public int baseDamage;
-    [Range(0f,1f)]
-    public float hitChance;
+    public string attackName;
+    public GameObject prefab;
+    public int staminaCost;
 }
