@@ -37,7 +37,7 @@ public class BoundingBoxBehaviour : MonoBehaviour
                 }
             }
         }
-        Debug.Log($"{grid.value.Count} tiles generated");
+        // Debug.Log($"{grid.value.Count} tiles generated");
     }
 
     private void OnDrawGizmosSelected()

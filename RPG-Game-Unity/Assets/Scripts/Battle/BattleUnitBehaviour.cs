@@ -1,5 +1,6 @@
-﻿using UnityEditor;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(AgentMoveBehaviour))]
 public class BattleUnitBehaviour : MonoBehaviour
@@ -8,6 +9,8 @@ public class BattleUnitBehaviour : MonoBehaviour
     public MoveSetData attacks;
 
     public int health;
+
+    public UnityEvent updateHealthEvent;
     
     private AgentMoveBehaviour agentMove;
 
@@ -15,6 +18,13 @@ public class BattleUnitBehaviour : MonoBehaviour
     {
         var totalDamage = damage.GetTotalDamage(this);
         health -= damage.baseDamage;
+        updateHealthEvent.Invoke();
+    }
+
+    public void DisplayHealth(Image image)
+    {
+        var fill = health * 1f / character.baseHealth.value;
+        image.fillAmount = fill;
     }
 
     private void Start()
@@ -22,5 +32,6 @@ public class BattleUnitBehaviour : MonoBehaviour
         agentMove = GetComponent<AgentMoveBehaviour>();
 
         health = character.baseHealth.value;
+        updateHealthEvent.Invoke();
     }
 }

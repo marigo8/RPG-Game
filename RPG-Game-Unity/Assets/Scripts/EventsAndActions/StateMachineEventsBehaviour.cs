@@ -27,4 +27,9 @@ public class StateMachineEventsBehaviour : StateMachineBehaviour
     {
         Destroy(animator.gameObject);
     }
+    
+    public void DebugEvent(string message)
+    {
+        Debug.Log(message);
+    }
 }

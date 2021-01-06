@@ -36,7 +36,7 @@ public class AttackBehaviour : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log($"{name} activated on frame {Time.frameCount}!");
+        // Debug.Log($"{name} activated on frame {Time.frameCount}!");
         
         var unit = other.GetComponent<BattleUnitBehaviour>();
         if (unit == null) return;
@@ -51,7 +51,6 @@ public class AttackBehaviour : MonoBehaviour
         }
         else // miss
         {
-            Debug.Log("I guess they never miss");
             missEvent.Invoke(unit);
         }
         

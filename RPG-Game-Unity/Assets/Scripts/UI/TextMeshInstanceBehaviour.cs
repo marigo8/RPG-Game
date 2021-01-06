@@ -20,7 +20,6 @@ public class TextMeshInstanceBehaviour : MonoBehaviour
 
     public void InstantiateTextMesh(string text)
     {
-        Debug.Log("huh?");
         InstantiateTextMesh(text,defaultColor);
     }
 }
