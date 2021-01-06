@@ -9,6 +9,6 @@ public class CharacterData : ScriptableObject
     public ColorData color;
 
     public IntData baseHealth;
-    public float damageModifier = 1f, dodgeChanceModifier = 1f, maxMoveDistance = 5f;
+    public float damageModifier = 1f, dodgeChance = 0f, maxMoveDistance = 5f;
     public ElementalData elementalModifiers;
 }

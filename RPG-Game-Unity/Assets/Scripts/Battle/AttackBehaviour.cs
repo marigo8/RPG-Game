@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 using UnityEngine.Events;
 
 [System.Serializable]
@@ -6,15 +7,22 @@ public class DamageData
 {
     public AttackTypeID type;
     public int baseDamage;
-    [Range(0f, 1f)] public float hitChance;
+    public float hitChance;
 }
 
+[RequireComponent(typeof(TextMeshInstanceBehaviour))]
 public class AttackBehaviour : MonoBehaviour
 {
-
+    private TextMeshInstanceBehaviour textMeshInstancer;
+    
     public DamageData data;
 
-    public UnityEvent<BattleUnitBehaviour> activateEvent;
+    public UnityEvent<BattleUnitBehaviour> hitEvent, missEvent;
+
+    private void Start()
+    {
+        textMeshInstancer = GetComponent<TextMeshInstanceBehaviour>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -23,11 +31,40 @@ public class AttackBehaviour : MonoBehaviour
         var unit = other.GetComponent<BattleUnitBehaviour>();
         if (unit == null) return;
         
-        activateEvent.Invoke(unit);
+        var character = unit.character;
+        var chance = data.hitChance - character.dodgeChance;
+        var diceRoll = Random.Range(0f, 1f);
+
+        if (diceRoll < chance) // hit or...
+        {
+            hitEvent.Invoke(unit);
+        }
+        else // miss
+        {
+            Debug.Log("I guess they never miss");
+            missEvent.Invoke(unit);
+        }
+        
     }
 
     public void UpdateUnitHealth(BattleUnitBehaviour unit)
     {
         unit.TakeDamage(data);
+    }
+
+    public void DisplayDamage(BattleUnitBehaviour unit)
+    {
+        var totalDamage = -data.baseDamage * unit.character.elementalModifiers.GetModifier(data.type);
+        var color = Color.white;
+        if (totalDamage < 0)
+        {
+            color = Color.red;
+        }
+        else if (totalDamage > 0)
+        {
+            color = Color.green;
+        }
+
+        textMeshInstancer.InstantiateTextMesh(totalDamage.ToString("+#;-#;-0"), color);
     }
 }
