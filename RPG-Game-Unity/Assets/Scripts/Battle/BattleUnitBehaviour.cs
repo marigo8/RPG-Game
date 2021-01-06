@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using UnityEditor;
+using UnityEngine;
 
 [RequireComponent(typeof(AgentMoveBehaviour))]
 public class BattleUnitBehaviour : MonoBehaviour
@@ -12,6 +13,7 @@ public class BattleUnitBehaviour : MonoBehaviour
 
     public void TakeDamage(DamageData damage)
     {
+        var totalDamage = damage.GetTotalDamage(this);
         health -= damage.baseDamage;
     }
 

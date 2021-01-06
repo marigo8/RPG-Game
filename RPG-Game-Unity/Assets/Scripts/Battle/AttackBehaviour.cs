@@ -8,6 +8,16 @@ public class DamageData
     public AttackTypeID type;
     public int baseDamage;
     public float hitChance;
+
+    public BattleUnitBehaviour attacker;
+
+    public int GetTotalDamage(BattleUnitBehaviour target)
+    {
+        var totalDamage = baseDamage;
+        totalDamage = (int) (totalDamage * attacker.character.damageModifier);
+        totalDamage = (int) (totalDamage * target.character.elementalModifiers.GetModifier(type));
+        return totalDamage;
+    }
 }
 
 [RequireComponent(typeof(TextMeshInstanceBehaviour))]
@@ -54,7 +64,7 @@ public class AttackBehaviour : MonoBehaviour
 
     public void DisplayDamage(BattleUnitBehaviour unit)
     {
-        var totalDamage = -data.baseDamage * unit.character.elementalModifiers.GetModifier(data.type);
+        var totalDamage = -data.GetTotalDamage(unit);
         var color = Color.white;
         if (totalDamage < 0)
         {

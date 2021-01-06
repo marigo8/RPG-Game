@@ -11,6 +11,22 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 22100000, guid: a1e9af2995b64154bb6c2519f393a726, type: 2}
+    - target: {fileID: 190245997624131868, guid: 0989e40d4b1dfec40b5eb181a37a3fef, type: 3}
+      propertyPath: damageSpheres.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 190245997624131868, guid: 0989e40d4b1dfec40b5eb181a37a3fef, type: 3}
+      propertyPath: damageSpheres.Array.data[0]
+      value: 
+      objectReference: {fileID: 5489891116681851745}
+    - target: {fileID: 190245997624131868, guid: 0989e40d4b1dfec40b5eb181a37a3fef, type: 3}
+      propertyPath: damageSpheres.Array.data[1]
+      value: 
+      objectReference: {fileID: 7413679426108268855}
+    - target: {fileID: 190245997624131868, guid: 0989e40d4b1dfec40b5eb181a37a3fef, type: 3}
+      propertyPath: damageSpheres.Array.data[2]
+      value: 
+      objectReference: {fileID: 7542586212705242183}
     - target: {fileID: 589097493458112761, guid: 0989e40d4b1dfec40b5eb181a37a3fef, type: 3}
       propertyPath: m_Name
       value: Sword Slash Wide
@@ -139,6 +155,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+--- !u!114 &5489891116681851745 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1235354986313185464, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+  m_PrefabInstance: {fileID: 6707230054944902105}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 960b428df023bb04d904fdb7e63722ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8630712145471494543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -208,6 +235,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+--- !u!114 &7413679426108268855 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1235354986313185464, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+  m_PrefabInstance: {fileID: 8630712145471494543}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 960b428df023bb04d904fdb7e63722ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8757384587085772031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -277,3 +315,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+--- !u!114 &7542586212705242183 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1235354986313185464, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+  m_PrefabInstance: {fileID: 8757384587085772031}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 960b428df023bb04d904fdb7e63722ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
