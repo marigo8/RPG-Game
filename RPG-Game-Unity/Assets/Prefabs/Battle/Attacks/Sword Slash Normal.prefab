@@ -7,10 +7,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2739099572465281861}
     m_Modifications:
+    - target: {fileID: 1235354986313185464, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+      propertyPath: data.hitChance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1235354986313185464, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
+      propertyPath: data.baseDamage
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 1313747673009424559, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
       propertyPath: data
       value: 
-      objectReference: {fileID: 11400000, guid: d5f64ab8160467d4f8bbe8bef021d30d, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 8325667364027669853, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
       propertyPath: m_RootOrder
       value: 0

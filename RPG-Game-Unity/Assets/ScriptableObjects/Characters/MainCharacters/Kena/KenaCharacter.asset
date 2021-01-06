@@ -16,6 +16,6 @@ MonoBehaviour:
   color: {fileID: 11400000, guid: c6d44825da3564e45b06cae861dac9e4, type: 2}
   baseHealth: {fileID: 11400000, guid: 08661dc0040aaed449d5eb813b9ccd94, type: 2}
   damageModifier: 1
-  dodgeChance: 0
+  dodgeChance: 0.2
   maxMoveDistance: 5
   elementalModifiers: {fileID: 11400000, guid: a1bb8a2e78abade4bbb646d0a9270122, type: 2}

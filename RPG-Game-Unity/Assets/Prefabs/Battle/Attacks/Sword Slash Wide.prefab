@@ -75,7 +75,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1235354986313185464, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
       propertyPath: data.hitChance
-      value: 0.9
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 1235354986313185464, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
       propertyPath: data.baseDamage
@@ -148,7 +148,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1235354986313185464, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
       propertyPath: data.hitChance
-      value: 0.75
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 1235354986313185464, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
       propertyPath: data.baseDamage
@@ -217,7 +217,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1235354986313185464, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
       propertyPath: data.hitChance
-      value: 0.9
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 1235354986313185464, guid: 93a66846e15540c4f97947eeaeb8aac2, type: 3}
       propertyPath: data.baseDamage
