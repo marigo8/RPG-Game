@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 190245997624131868}
   - component: {fileID: 7889250768270122418}
   - component: {fileID: 7559557108383435344}
+  - component: {fileID: 3702469693668651942}
   m_Layer: 0
   m_Name: Attack
   m_TagString: Untagged
@@ -109,3 +110,39 @@ MonoBehaviour:
   lockX: 1
   lockY: 0
   lockZ: 1
+--- !u!114 &3702469693668651942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589097493458112761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a96cc8d0b1c3cff4ab67a5338b07d6c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputEventPairs:
+  - name: Submit
+    useInputManager: 1
+    inputDownEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: -1182478548173817296}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: SetTrigger
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Activate
+            m_BoolArgument: 0
+          m_CallState: 2
+    inputEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    inputUpEvent:
+      m_PersistentCalls:
+        m_Calls: []
