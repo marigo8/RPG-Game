@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4985381327156719442}
   - component: {fileID: -1182478548173817296}
   - component: {fileID: 190245997624131868}
+  - component: {fileID: 7889250768270122418}
+  - component: {fileID: 7559557108383435344}
   m_Layer: 0
   m_Name: Attack
   m_TagString: Untagged
@@ -64,3 +66,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageSpheres: []
+--- !u!114 &7889250768270122418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589097493458112761}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5bc27716e32f7640a920e514b4f22de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7559557108383435344}
+        m_TargetAssemblyTypeName: LookAtBehaviour, Assembly-CSharp
+        m_MethodName: LookAtTarget
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: f6501a1ef95c31a4e9d366384426d40e, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Vector3Data, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7559557108383435344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589097493458112761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c04c246b80abee488416f717ad4a9cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  degrees: 90
+  lockX: 1
+  lockY: 0
+  lockZ: 1
