@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8a1118eb1ee7cd489fb96180645fb6d, type: 3}
   m_Name: KenaCharacter
   m_EditorClassIdentifier: 
-  characterName: {fileID: 11400000, guid: 735f35554873aef4e9b877aae6ea75b6, type: 2}
-  color: {fileID: 11400000, guid: c6d44825da3564e45b06cae861dac9e4, type: 2}
-  baseHealth: {fileID: 11400000, guid: 08661dc0040aaed449d5eb813b9ccd94, type: 2}
+  characterName: Kena
+  dialogueColor: {r: 0.15294118, g: 0.47843137, b: 0.9137255, a: 1}
+  baseHealth: 100
   damageModifier: 1
   dodgeChance: 0.2
   maxMoveDistance: 5

@@ -23,7 +23,7 @@ public class BattleUnitBehaviour : MonoBehaviour
 
     public void DisplayHealth(Image image)
     {
-        var fill = health * 1f / character.baseHealth.value;
+        var fill = health * 1f / character.baseHealth;
         image.fillAmount = fill;
     }
 
@@ -31,7 +31,7 @@ public class BattleUnitBehaviour : MonoBehaviour
     {
         agentMove = GetComponent<AgentMoveBehaviour>();
 
-        health = character.baseHealth.value;
+        health = character.baseHealth;
         updateHealthEvent.Invoke();
     }
 }

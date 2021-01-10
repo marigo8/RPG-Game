@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8a1118eb1ee7cd489fb96180645fb6d, type: 3}
   m_Name: GavinCharacter
   m_EditorClassIdentifier: 
-  characterName: {fileID: 11400000, guid: 7e0c0ea34d0d8a34e8ee32c84fa5a34e, type: 2}
-  color: {fileID: 11400000, guid: 92129d4d08cd94d418819e9fd2a52132, type: 2}
-  baseHealth: {fileID: 11400000, guid: e47e9bc05b433f04c93b24021044b7d8, type: 2}
+  characterName: Gavin
+  dialogueColor: {r: 0.15294118, g: 0.69803923, b: 0.050980393, a: 1}
+  baseHealth: 100
   damageModifier: 1
   dodgeChance: 0.1
   maxMoveDistance: 5

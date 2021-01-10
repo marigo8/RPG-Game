@@ -51,14 +51,7 @@ public class StoryUIBehaviour : MonoBehaviour
 
         if (character != null)
         {
-            if (character.color != null)
-            {
-                dialogueText.color = character.color.value;
-            }
-            else
-            {
-                dialogueText.color = defaultColor;
-            }
+            dialogueText.color = character.dialogueColor;
         }
         else
         {
@@ -76,10 +69,10 @@ public class StoryUIBehaviour : MonoBehaviour
         }
         namePanel.SetActive(true);
         
-        var characterName = character.characterName.value;
+        var characterName = character.characterName;
 
         nameText.text = characterName;
-        nameText.color = character.color != null ? character.color.value : defaultColor;
+        nameText.color = character.dialogueColor;
     }
 
     private void Update()
