@@ -1,0 +1,13 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SwordSlashDouble
+  m_Controller: {fileID: 9100000, guid: 2e62317716e5c96409152c0254215d05, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 5eb26cb0479c41342ab6a85103ddc37d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1a968ed824b14e44ca005e7db4410654, type: 2}

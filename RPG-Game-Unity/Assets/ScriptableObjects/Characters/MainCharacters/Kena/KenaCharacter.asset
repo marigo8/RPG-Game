@@ -19,3 +19,4 @@ MonoBehaviour:
   dodgeChance: 0.2
   maxMoveDistance: 5
   elementalModifiers: {fileID: 11400000, guid: a1bb8a2e78abade4bbb646d0a9270122, type: 2}
+  moveSet: {fileID: 11400000, guid: d47d9b44493f6cc469638f239a5d1f3b, type: 2}

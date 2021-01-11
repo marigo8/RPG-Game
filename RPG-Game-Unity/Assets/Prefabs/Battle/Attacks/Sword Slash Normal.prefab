@@ -87,6 +87,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1182478548173817296, guid: 0989e40d4b1dfec40b5eb181a37a3fef, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 172299f5588b9d04db38f4236149d075, type: 2}
     - target: {fileID: 190245997624131868, guid: 0989e40d4b1dfec40b5eb181a37a3fef, type: 3}
       propertyPath: damageSpheres.Array.size
       value: 1

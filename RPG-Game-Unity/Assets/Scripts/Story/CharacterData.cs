@@ -12,4 +12,5 @@ public class CharacterData : ScriptableObject
     public int baseHealth = 100;
     public float damageModifier = 1f, dodgeChance = 0f, maxMoveDistance = 5f;
     public ElementalData elementalModifiers;
+    public MoveSetData moveSet;
 }

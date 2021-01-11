@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(BattleUnitBehaviour))]
 [RequireComponent(typeof(NavMeshAgent))]
 [RequireComponent(typeof(NavMeshObstacle))]
 public class AgentMoveBehaviour : MonoBehaviour
 {
-    public GameAction moveStartAction, moveEndAction;
+    public UnityEvent moveStartEvent, moveEndEvent;
 
     private NavMeshAgent agent;
     public NavMeshObstacle obstacle;
@@ -59,7 +60,7 @@ public class AgentMoveBehaviour : MonoBehaviour
         moving = true;
         
         // Prepare for Path Calculation
-        moveStartAction.Raise();
+        moveStartEvent.Invoke();
         
         obstacle.enabled = false; // obstacle carves the navmesh, so it needs to be disabled before calculating the path
         yield return new WaitUntil(() => true); // wait one frame so that the navmesh can update.
@@ -77,7 +78,7 @@ public class AgentMoveBehaviour : MonoBehaviour
         
         // Finish
         obstacle.enabled = true;
-        moveEndAction.Raise();
+        moveEndEvent.Invoke();
         moving = false;
     }
 

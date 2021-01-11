@@ -356,8 +356,72 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b01ced9ebc9e8646a4ab1890603c879, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveStartAction: {fileID: 11400000, guid: f4dfa3ddea67334418f96517842e73e1, type: 2}
-  moveEndAction: {fileID: 11400000, guid: e00e163818f9ce9478b9c82e108ae056, type: 2}
+  moveStartEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: f4dfa3ddea67334418f96517842e73e1, type: 2}
+        m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  moveEndEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: e00e163818f9ce9478b9c82e108ae056, type: 2}
+        m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 8cfb7dde7307e8a4bac6bd2b755eafd6, type: 2}
+        m_TargetAssemblyTypeName: OptionsController, Assembly-CSharp
+        m_MethodName: DisplayOptions
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 823782d1dc0ab4a4bb822bdf23fcbd95, type: 2}
+          m_ObjectArgumentAssemblyTypeName: OptionsData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: c6d8c16e6afc4e3408141d0d94eee6d9, type: 2}
+        m_TargetAssemblyTypeName: OptionsData, Assembly-CSharp
+        m_MethodName: ClearOptions
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7962189247392144202}
+        m_TargetAssemblyTypeName: BattleUnitBehaviour, Assembly-CSharp
+        m_MethodName: ShowAttackOptions
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: c6d8c16e6afc4e3408141d0d94eee6d9, type: 2}
+          m_ObjectArgumentAssemblyTypeName: OptionsData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   obstacle: {fileID: 0}
 --- !u!114 &3081599166764953496
 MonoBehaviour:
@@ -437,7 +501,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 0}
-  attacks: {fileID: 0}
   health: 0
   updateHealthEvent:
     m_PersistentCalls:
